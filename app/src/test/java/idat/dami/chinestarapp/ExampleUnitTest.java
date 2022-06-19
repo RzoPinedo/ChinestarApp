@@ -1,4 +1,4 @@
-package idat.dam1.ec1calculadora;
+package idat.dami.chinestarapp;
 
 import org.junit.Test;
 

@@ -6,7 +6,7 @@ android {
     compileSdk 32
 
     defaultConfig {
-        applicationId "idat.dam1.ec1calculadora"
+        applicationId "idat.dami.chinestarapp"
         minSdk 26
         targetSdk 32
         versionCode 1
