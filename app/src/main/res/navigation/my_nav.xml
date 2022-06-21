@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/my_nav"
+    app:startDestination="@id/cinesActivity2">
+
+    <activity
+        android:id="@+id/cinesActivity2"
+        android:name="idat.dami.chinestarapp.CinesActivity"
+        android:label="activity_cines"
+        tools:layout="@layout/activity_cines" />
+    <activity
+        android:id="@+id/confiteriaActivity2"
+        android:name="idat.dami.chinestarapp.ConfiteriaActivity"
+        android:label="activity_confiteria"
+        tools:layout="@layout/activity_confiteria" />
+    <activity
+        android:id="@+id/formatosActivity2"
+        android:name="idat.dami.chinestarapp.FormatosActivity"
+        android:label="activity_formatos"
+        tools:layout="@layout/activity_formatos" />
+    <activity
+        android:id="@+id/promoActivity2"
+        android:name="idat.dami.chinestarapp.PromoActivity"
+        android:label="activity_promo"
+        tools:layout="@layout/activity_promo" />
+    <activity
+        android:id="@+id/mainActivity"
+        android:name="idat.dami.chinestarapp.MainActivity"
+        android:label="activity_main"
+        tools:layout="@layout/activity_main" />
+</navigation>
