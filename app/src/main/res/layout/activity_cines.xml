@@ -6,4 +6,16 @@
     android:layout_height="match_parent"
     tools:context=".CinesActivity">
 
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:height="50dp"
+        android:autoSizeTextType="uniform"
+        android:backgroundTint="@color/design_default_color_error"
+        android:text="@string/name_app"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="31dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>

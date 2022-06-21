@@ -1,3 +1,6 @@
 <resources>
     <string name="app_name">Chinestar App</string>
+    <string name="name_app">ChineStar</string>
+    <string name="title_cines">Cines</string>
+
 </resources>
