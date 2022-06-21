@@ -17,6 +17,9 @@
             android:name=".PromoActivity"
             android:exported="false" />
         <activity
+            android:name=".CinesActivity"
+            android:exported="false" />
+        <activity
             android:name=".FormatosActivity"
             android:exported="false" />
         <activity
