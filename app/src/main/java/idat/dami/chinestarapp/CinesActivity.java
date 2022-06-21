@@ -12,5 +12,7 @@ public class CinesActivity extends AppCompatActivity {
         setContentView(R.layout.activity_cines);
 
         getSupportActionBar().hide();
+
     }
+
 }
