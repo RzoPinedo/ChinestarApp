@@ -1,6 +1,14 @@
 <resources>
+<<<<<<< HEAD
     <string name="app_name">Chinestar App</string>
     <string name="name_app">ChineStar</string>
     <string name="title_cines">Cines</string>
 
+=======
+    <string name="app_name">ChineStar</string>
+    <string name="main_estrenos">Estrenos</string>
+    <string name="main_cartelera">Cartelera</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+>>>>>>> 626c1bc72233048dc77256410be891442d35e00d
 </resources>
