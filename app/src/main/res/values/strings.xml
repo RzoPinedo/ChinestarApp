@@ -1,5 +1,4 @@
 <resources>
-    <string name="app_name">Chinestar App</string>
     <string name="app_name">ChineStar</string>
     <string name="main_estrenos">Estrenos</string>
     <string name="main_cartelera">Cartelera</string>
