@@ -14,10 +14,13 @@
         android:theme="@style/Theme.ChinestarApp"
         tools:targetApi="31">
         <activity
+            android:name=".listView"
+            android:exported="false" />
+        <activity
             android:name=".PromoActivity"
             android:exported="false" />
         <activity
-            android:name=".CinesActivity"
+            android:name=".MainActivity"
             android:exported="false" />
         <activity
             android:name=".FormatosActivity"
@@ -26,7 +29,7 @@
             android:name=".ConfiteriaActivity"
             android:exported="false" />
         <activity
-            android:name=".MainActivity"
+            android:name=".CinesActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

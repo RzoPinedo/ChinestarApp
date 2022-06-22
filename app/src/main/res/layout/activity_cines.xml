@@ -19,30 +19,14 @@
         app:srcCompat="@drawable/header2_usuario_" />
 
 
-    <ImageView
-        android:id="@+id/imageView10"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/header"
-        android:adjustViewBounds="true"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/header"
-        app:srcCompat="@drawable/departamentos" />
-
-    <TextView
-        android:id="@+id/departamentos"
-        android:layout_width="320dp"
-        android:layout_height="29dp"
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="229dp"
+        android:layout_height="50dp"
         android:layout_marginStart="50dp"
-        android:layout_marginTop="3dp"
-        android:text="@string/departamentos"
-        android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="@+id/imageView10"
-        app:layout_constraintEnd_toEndOf="@+id/imageView10"
-        app:layout_constraintStart_toStartOf="@+id/imageView10"
-        app:layout_constraintTop_toBottomOf="@+id/header" />
-
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView9"
+        tools:visibility="visible" />
 
     <ImageView
         android:id="@+id/idInicio"
@@ -97,6 +81,27 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toEndOf="@+id/idFormatos"
         app:srcCompat="@drawable/promociones" />
+
+    <ListView
+        android:id="@+id/listview"
+        android:layout_width="325dp"
+        android:layout_height="437dp"
+        app:layout_constraintBottom_toTopOf="@+id/idConfiteria"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinner" />
+
+    <ImageView
+        android:id="@+id/imageView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/header"
+        app:srcCompat="@drawable/departamentos" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
