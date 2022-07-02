@@ -3,4 +3,11 @@
     <string name="main_estrenos">Estrenos</string>
     <string name="main_cartelera">Cartelera</string>
     <string name="departamentos">Lima</string>
+
+    <string name="usuario_login">Usuario</string>
+    <string name="password_login">Password</string>
+    <string name="btn_ingresar">Ingresar</string>
+    <string name="acceso">Acceso</string>
+
+
 </resources>
