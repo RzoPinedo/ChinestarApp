@@ -10,15 +10,15 @@
 
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="336dp"
         android:layout_gravity="center_vertical"
         android:fillViewport="true">
 
         <LinearLayout
             android:layout_width="280dp"
             android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:layout_gravity="center_horizontal">
+            android:layout_gravity="center_horizontal"
+            android:orientation="vertical">
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -33,12 +33,6 @@
                     app:counterEnabled="true"
                     app:counterMaxLength="20">
 
-                    <EditText
-                        android:id="@+id/editTextPrimerNombre"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:hint="Primer Nombre *"
-                        android:inputType="text" />
                 </com.google.android.material.textfield.TextInputLayout>
             </LinearLayout>
 
@@ -81,12 +75,14 @@
 
                     <EditText
                         android:id="@+id/editTextApellidoPaterno"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
+                        android:layout_width="55dp"
+                        android:layout_height="57dp"
                         android:hint="Apellido Paterno"
                         android:inputType="text" />
                 </com.google.android.material.textfield.TextInputLayout>
             </LinearLayout>
+
+
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -102,17 +98,27 @@
                     app:counterEnabled="true"
                     app:counterMaxLength="20">
 
-                    <EditText
-                        android:id="@+id/editTextApellidoMaterno"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:hint="Apellido Materno"
-                        android:inputType="text" />
                 </com.google.android.material.textfield.TextInputLayout>
             </LinearLayout>
+
+            <EditText
+                android:id="@+id/editTextApellidoMaterno"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:hint="Apellido Materno"
+                android:inputType="text" />
 
         </LinearLayout>
 
     </ScrollView>
+
+    <EditText
+        android:id="@+id/editTextPrimerNombre"
+        android:layout_width="6dp"
+        android:layout_height="wrap_content"
+        android:hint="Primer Nombre *"
+        android:inputType="text" />
+
+
 
 </LinearLayout>
