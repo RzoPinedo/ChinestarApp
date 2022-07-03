@@ -23,4 +23,13 @@
     <string name="btn_ingresar">Enter</string>
     <string name="btn_cancelar">Cancel</string>
 
+    <!-- Registro -->
+    <string name="masculino">Masculin</string>
+    <string name="femenino">Femenino</string>
+    <string name="nombres">Nombres</string>
+    <string name="apellidos">Apellidos</string>
+    <string name="registrar">Registrar</string>
+    <string name="fecha_nacimiento">Fecha de Nacimiento</string>
+
+
 </resources>
