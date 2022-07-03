@@ -9,273 +9,212 @@
 
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="336dp"
+        android:layout_height="wrap_content"
         android:layout_gravity="center_vertical"
         android:fillViewport="true">
 
-    <LinearLayout
-    <<<<<<< HEAD
-    android:layout_width="280dp"
-    android:layout_height="wrap_content"
-    android:layout_gravity="center_horizontal"
-    android:orientation="vertical">
-    =======
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:paddingLeft="30dp"
-    android:paddingTop="80dp"
-    android:paddingRight="30dp">
-
-    <com.google.android.material.card.MaterialCardView
-        android:id="@+id/card"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="8dp">
-
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical">
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingLeft="30dp"
+            android:paddingTop="20dp"
+            android:paddingRight="20dp">
 
-            <!-- Botones -->
-
-            <LinearLayout
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/card"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:padding="16dp">
+                android:layout_margin="8dp">
 
-                <!--  -->
-                <TextView
+                <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="@string/registrar"
-                    android:textAlignment="center"
-                    android:textAppearance="?attr/textAppearanceHeadline6"
-                    android:textColor="@color/red"
-                    android:textSize="25dp" />
+                    android:orientation="vertical">
 
-                <com.google.android.material.textfield.TextInputLayout
-                    android:id="@+id/edNombres"
-                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:hint="@string/nombres"
-                    android:paddingTop="15dp">
+                    <!-- Botones -->
 
-                    <com.google.android.material.textfield.TextInputEditText
+                    <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:background="@color/white"
-                        android:imeOptions="actionNext"
-                        android:inputType="textPersonName"
-                        android:typeface="sans" />
+                        android:orientation="vertical"
+                        android:padding="16dp">
 
-                </com.google.android.material.textfield.TextInputLayout>
+                        <!--  -->
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/registrar"
+                            android:textAlignment="center"
+                            android:textAppearance="?attr/textAppearanceHeadline6"
+                            android:textColor="@color/red"
+                            android:textSize="25dp" />
 
-                <com.google.android.material.textfield.TextInputLayout
-                    android:id="@+id/edApellidos"
-                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:hint="@string/apellidos"
-                    android:paddingTop="15dp">
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:id="@+id/edNombres"
+                            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="@string/nombres"
+                            android:paddingTop="15dp">
 
-                    <com.google.android.material.textfield.TextInputEditText
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@color/white"
+                                android:imeOptions="actionNext"
+                                android:inputType="textPersonName"
+                                android:typeface="sans" />
+
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:id="@+id/edApellidos"
+                            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="@string/apellidos"
+                            android:paddingTop="15dp">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@color/white"
+                                android:imeOptions="actionNext"
+                                android:inputType="textPersonName"
+                                android:typeface="sans" />
+
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:id="@+id/edEmailRegistro"
+                            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="@string/email"
+                            android:paddingTop="15dp">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@color/white"
+                                android:imeOptions="actionNext"
+                                android:inputType="textEmailAddress"
+                                android:typeface="sans" />
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:id="@+id/edPasswordRegistro"
+                            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="@string/new_password"
+                            android:paddingTop="10dp"
+                            app:endIconMode="password_toggle">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:imeOptions="actionNext"
+                                android:background="@color/white"
+                                android:inputType="textPassword"
+                                android:typeface="sans" />
+
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:id="@+id/edConfirmPassword"
+                            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="@string/confirm_password"
+                            android:paddingTop="10dp"
+                            app:endIconMode="password_toggle">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:imeOptions="actionNext"
+                                android:background="@color/white"
+                                android:inputType="textPassword"
+                                android:typeface="sans" />
+
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:id="@+id/edFechaNacimiento"
+                            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="@string/fecha_nacimiento"
+                            android:paddingTop="15dp">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@color/white"
+                                android:imeOptions="actionNext"
+                                android:inputType="date"
+                                android:typeface="sans" />
+
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                        <androidx.constraintlayout.utils.widget.MotionLabel
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:text="@string/genero"
+                            android:textAlignment="textStart"
+                            android:textColor="@color/black">
+
+                        </androidx.constraintlayout.utils.widget.MotionLabel>
+
+                        <RadioGroup
+                            android:id="@+id/radioGroup"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:checkedButton="@+id/radio_button_1">
+
+                            <RadioButton
+                                android:id="@+id/radio_button_1"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:text="@string/masculino" />
+
+                            <RadioButton
+                                android:id="@+id/radio_button_2"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:text="@string/femenino" />
+                        </RadioGroup>
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:background="@color/white"
-                        android:imeOptions="actionNext"
-                        android:inputType="textPersonName"
-                        android:typeface="sans" />
+                        android:layout_margin="5dp"
+                        android:orientation="horizontal">
 
-                </com.google.android.material.textfield.TextInputLayout>
+                        <Button
+                            android:id="@+id/btnRegistrar"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical|center_horizontal"
+                            android:text="@string/btn_ingresar" />
+                        <!-- android:onClick="" -->
 
-                <com.google.android.material.textfield.TextInputLayout
-                    android:id="@+id/edFechaNacimiento"
-                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:hint="@string/fecha_nacimiento"
-                    android:paddingTop="15dp">
-
-                    <com.google.android.material.textfield.TextInputEditText
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:background="@color/white"
-                        android:imeOptions="actionNext"
-                        android:inputType="date"
-                        android:typeface="sans" />
-
-                </com.google.android.material.textfield.TextInputLayout>
-
-                <RadioGroup
-                    android:id="@+id/radioGroup"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:checkedButton="@+id/radio_button_1">
-
-                    <RadioButton
-                        android:id="@+id/radio_button_1"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:text="@string/masculino" />
-
-                    <RadioButton
-                        android:id="@+id/radio_button_2"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:text="@string/femenino" />
-                </RadioGroup>
+                    </LinearLayout>
 
 
-            </LinearLayout>
+                </LinearLayout>
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_margin="5dp"
-                android:orientation="horizontal">
-
-                <Button
-                    android:id="@+id/btnRegistrar"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center_vertical|center_horizontal"
-                    android:onClick=""
-                    android:text="@string/btn_ingresar" />
-            </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
 
 
         </LinearLayout>
-
-    </com.google.android.material.card.MaterialCardView>
-
-
-</LinearLayout>
-
-    <!--
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical"
-        android:layout_gravity="center_horizontal">
->>>>>>> 96f6a5d857d08b8065a2b74662044cd8a9058588
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="3dp"
-            android:layout_marginBottom="3dp">
-            <com.google.android.material.textfield.TextInputLayout
-                android:id="@+id/textInputLayoutPrimerNombre"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                app:counterEnabled="true"
-                app:counterMaxLength="20">
-<<<<<<< HEAD
-=======
-                <EditText
-                    android:id="@+id/editTextPrimerNombre"
-                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:hint="Primer Nombre *"
-                    android:inputType="text" />
->>>>>>> 96f6a5d857d08b8065a2b74662044cd8a9058588
-            </com.google.android.material.textfield.TextInputLayout>
-        </LinearLayout>
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="3dp"
-            android:layout_marginBottom="3dp"
-            android:orientation="vertical">
-            <com.google.android.material.textfield.TextInputLayout
-                android:id="@+id/textInputLayoutSegundoNombre"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                app:counterEnabled="true"
-                app:counterMaxLength="20">
-                <EditText
-                    android:id="@+id/editTextSegundoNombre"
-                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:hint="Segundo Nombre"
-                    android:inputType="text" />
-            </com.google.android.material.textfield.TextInputLayout>
-        </LinearLayout>
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="3dp"
-            android:layout_marginBottom="3dp"
-            android:orientation="vertical">
-            <com.google.android.material.textfield.TextInputLayout
-                android:id="@+id/textInputLayoutApellidoPaterno"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                app:counterEnabled="true"
-                app:counterMaxLength="20">
-                <EditText
-                    android:id="@+id/editTextApellidoPaterno"
-<<<<<<< HEAD
-                    android:layout_width="55dp"
-                    android:layout_height="57dp"
-=======
-                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
->>>>>>> 96f6a5d857d08b8065a2b74662044cd8a9058588
-                    android:hint="Apellido Paterno"
-                    android:inputType="text" />
-            </com.google.android.material.textfield.TextInputLayout>
-        </LinearLayout>
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="3dp"
-            android:layout_marginBottom="3dp"
-            android:orientation="vertical">
-            <com.google.android.material.textfield.TextInputLayout
-                android:id="@+id/textInputLayoutApellidoMaterno"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                app:counterEnabled="true"
-                app:counterMaxLength="20">
-<<<<<<< HEAD
-            </com.google.android.material.textfield.TextInputLayout>
-        </LinearLayout>
-        <EditText
-            android:id="@+id/editTextApellidoMaterno"
-            android:layout_width="match_parent"
-            android:layout_height="80dp"
-            android:hint="Apellido Materno"
-            android:inputType="text" />
-    </LinearLayout>
-=======
-                <EditText
-                    android:id="@+id/editTextApellidoMaterno"
-                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:hint="Apellido Materno"
-                    android:inputType="text" />
-            </com.google.android.material.textfield.TextInputLayout>
-        </LinearLayout>
-    </LinearLayout>-->
-    >>>>>>> 96f6a5d857d08b8065a2b74662044cd8a9058588
 
     </ScrollView>
 
-<EditText
-android:id="@+id/editTextPrimerNombre"
-android:layout_width="6dp"
-android:layout_height="wrap_content"
-android:hint="Primer Nombre *"
-android:inputType="text" />
-
-
-
-    </LinearLayout>
+</LinearLayout>
