@@ -23,7 +23,7 @@
     <string name="btn_cancelar">Cancelar</string>
 
     <!-- Registro -->
-    <string name="masculino">Masculino</string>
+    <string name="masculino">Masculin</string>
     <string name="femenino">Femenino</string>
     <string name="nombres">Nombres</string>
     <string name="apellidos">Apellidos</string>

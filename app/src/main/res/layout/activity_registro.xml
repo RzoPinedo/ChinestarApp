@@ -203,7 +203,7 @@
                             android:layout_height="wrap_content"
                             android:layout_gravity="center_vertical|center_horizontal"
                             android:text="@string/btn_ingresar" />
-                            <!-- android:onClick="" -->
+                        <!-- android:onClick="" -->
 
                     </LinearLayout>
 
