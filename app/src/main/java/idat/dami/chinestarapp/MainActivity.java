@@ -1,18 +1,12 @@
 package idat.dami.chinestarapp;
 
-import androidx.annotation.NonNull;
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.fragment.app.Fragment;
 
-import android.app.FragmentTransaction;
+import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
-import android.view.MenuItem;
 import android.view.View;
 
-import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
-import com.google.android.material.snackbar.Snackbar;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -24,18 +18,13 @@ public class MainActivity extends AppCompatActivity {
         getSupportActionBar().hide();
         setContentView(R.layout.activity_main);
 
-        floatingActionButton = findViewById(R.id.floating_action_button)
+        floatingActionButton = findViewById(R.id.floating_action_button);
+    }
 
+    public void onClick(View view) {
+        Intent objInicio = new Intent(this, RegistroActivity.class);
+        startActivity(objInicio);
 
-        floatingActionButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Snackbar.make(view, "Here's a Snackbar", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
-                Intent objInicio = new Intent(this, RegistroActivity.class);
-                startActivity(objInicio);
-            }
-        });
     }
 
 }
