@@ -1,35 +1,4 @@
-
-Skip to content
-    Pull requests
-    Issues
-    Marketplace
-    Explore
-    @raul-cuenca
-    RzoPinedo /
-    ChinestarApp
-    Public
-
-    Code
-    Issues
-    Pull requests
-    Actions
-    Projects
-    Wiki
-    Security
-
-    Insights
-
-    ChinestarApp/app/src/main/res/layout/activity_registro.xml
-    @scarpioagapito
-    scarpioagapito sandra cambio idioma
-    Latest commit 88de78c 3 minutes ago
-    History
-    3 contributors
-    @scarpioagapito
-    @RzoPinedo
-    @raul-cuenca
-    298 lines (247 sloc) 12.8 KB
-    <?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -310,20 +279,3 @@ android:inputType="text" />
 
 
     </LinearLayout>
-    Footer
-    © 2022 GitHub, Inc.
-    Footer navigation
-
-    Terms
-    Privacy
-    Security
-    Status
-    Docs
-    Contact GitHub
-    Pricing
-    API
-    Training
-    Blog
-    About
-
-    You have no unread notifications
