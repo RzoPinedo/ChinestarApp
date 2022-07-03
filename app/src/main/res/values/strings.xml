@@ -29,6 +29,11 @@
     <string name="apellidos">Apellidos</string>
     <string name="registrar">Registrar</string>
     <string name="fecha_nacimiento">Fecha de Nacimiento</string>
+    <string name="genero">Genero: </string>
+    <string name="email">Email </string>
+    <string name="new_password">Ingresa tu contraseña </string>
+    <string name="confirm_password">Confirma tu contraseña </string>
+
 
 
 </resources>
