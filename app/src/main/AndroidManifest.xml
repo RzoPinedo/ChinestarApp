@@ -12,7 +12,12 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.ChinestarApp"
-        tools:targetApi="31">
+        tools:targetApi="31"
+        android:windowSoftInputMode="adjustResize"
+        android:fitsSystemWindows="true">
+        <activity
+            android:name=".RegistroActivity"
+            android:exported="false" />
         <activity
             android:name=".ConfiteriaActivity"
             android:exported="false" />

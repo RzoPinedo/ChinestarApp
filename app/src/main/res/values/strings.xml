@@ -1,13 +1,26 @@
 <resources>
     <string name="app_name">ChineStar</string>
-    <string name="main_estrenos">Estrenos</string>
-    <string name="main_cartelera">Cartelera</string>
+    <!-- Main Principales -->
+    <string name="main_inicio">Inicio</string>
+    <string name="main_cines">Cines</string>
+    <string name="main_confiteria">Confiteria</string>
+    <string name="main_formatos">Formatos</string>
+    <string name="main_promocinoes">Promociones</string>
+    <string name="main_login">Login</string>
+
+    <!-- Main Cines -->
     <string name="departamentos">Lima</string>
 
-    <string name="usuario_login">Usuario</string>
-    <string name="password_login">Password</string>
+    <!-- Login -->
+    <string name="login_titulo">Inicio de Sesión</string>
+    <string name="usuario">Usuario</string>
+    <string name="usuario_help">usuario es tu email</string>
+    <string name="usuario_error">ingresa email válido</string>
+    <string name="password">Password</string>
+    <string name="password_help">usa solo números y letras</string>
+    <string name="password_error">debe tener min 8 caracteres</string>
     <string name="btn_ingresar">Ingresar</string>
-    <string name="acceso">Acceso</string>
+    <string name="btn_cancelar">Cancelar</string>
 
 
 </resources>
