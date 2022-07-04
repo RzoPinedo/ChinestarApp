@@ -1,6 +1,9 @@
 package idat.dami.chinestarapp;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.navigation.NavController;
+import androidx.navigation.fragment.NavHostFragment;
+import androidx.navigation.ui.NavigationUI;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -10,11 +13,14 @@ import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.Spinner;
 
+import com.google.android.material.bottomnavigation.BottomNavigationView;
+
 
 public class CinesActivity extends AppCompatActivity {
 
     private Spinner spinner1;
     private ListView lv;
+    private BottomNavigationView btn_nav;
 
 
     @Override
@@ -25,6 +31,9 @@ public class CinesActivity extends AppCompatActivity {
         getSupportActionBar().hide();
 
         spinner1 = (Spinner) findViewById(R.id.spinner);
+        btn_nav = (BottomNavigationView) findViewById(R.id.bottom_navigation);
+        Intent objInicio = new Intent(this, MainActivity.class);
+
 
         //icono en el actionbar
         //getSupportActionBar().setDisplayShowHomeEnabled(true);
@@ -36,20 +45,20 @@ public class CinesActivity extends AppCompatActivity {
         spinner1.setAdapter(adapter);
 
         //Lista de Cines
-        String cines[] = {"Cine San Borja","Av Aviación 2293","Teléfono: 014768476",
-                "Cine San Luis", "Av Canadá 344","Teléfono: 014768893",
-                "Cine Surco","Av Tomas Marsano 1120","Teléfono: 014763347",
-                "Cine Magdalena","Av La Paz 873","Teléfono: 014769989",
-                "Cine Bellavista","Av Colonial 1233","Teléfono: 0127873112",
-                "Cine Salamanca","Av Circunvalación 1432","Teléfono: 012787344",
-                "Cine Chorrillos","Av Guardia Civil 2873","Teléfono: 017622338",
-                "Cine Villa el Salvador", "Av Central St3-Grp.7-Mz.A-Lt.12-14","Teléfono: 014443788",
-                "Cine San juan de Miraflores","Av Pardo 221","Teléfono: 012898233",
-                "Cine Pueblo Libre","Av Juan Pablo II 2333","Teléfono: 012772312",
-                "Cine San miguel","Av La Marina 1988","Teléfono: 012238054"};
+        String cines[] = {"Cine San Borja", "Av Aviación 2293", "Teléfono: 014768476",
+                "Cine San Luis", "Av Canadá 344", "Teléfono: 014768893",
+                "Cine Surco", "Av Tomas Marsano 1120", "Teléfono: 014763347",
+                "Cine Magdalena", "Av La Paz 873", "Teléfono: 014769989",
+                "Cine Bellavista", "Av Colonial 1233", "Teléfono: 0127873112",
+                "Cine Salamanca", "Av Circunvalación 1432", "Teléfono: 012787344",
+                "Cine Chorrillos", "Av Guardia Civil 2873", "Teléfono: 017622338",
+                "Cine Villa el Salvador", "Av Central St3-Grp.7-Mz.A-Lt.12-14", "Teléfono: 014443788",
+                "Cine San juan de Miraflores", "Av Pardo 221", "Teléfono: 012898233",
+                "Cine Pueblo Libre", "Av Juan Pablo II 2333", "Teléfono: 012772312",
+                "Cine San miguel", "Av La Marina 1988", "Teléfono: 012238054"};
 
         lv = (ListView) findViewById(R.id.listview);
-        ArrayAdapter<String> adapter2 = new ArrayAdapter<String>(this,R.layout.list_item_cines,cines);
+        ArrayAdapter<String> adapter2 = new ArrayAdapter<String>(this, R.layout.list_item_cines, cines);
         lv.setAdapter(adapter2);
 
         lv.setOnItemClickListener(new AdapterView.OnItemClickListener() {

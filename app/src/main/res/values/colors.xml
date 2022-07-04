@@ -12,15 +12,16 @@
     <color name="yellow">#FFFF00</color>
 
     <!--?xml version="1.0" encoding="UTF-8"?-->
-    <color name="transparente">#00000000</color>
-    <color name="primaryColor">#dd2c00</color>
-    <color name="primaryLightColor">#ff6434</color>
-    <color name="primaryDarkColor">#a30000</color>
-    <color name="secondaryColor">#ff8a80</color>
-    <color name="secondaryLightColor">#ffbcaf</color>
-    <color name="secondaryDarkColor">#c85a54</color>
-    <color name="primaryTextColor">#ffffff</color>
-    <color name="secondaryTextColor">#212121</color>
+
+        <color name="primaryColor">#1a237e</color>
+        <color name="primaryLightColor">#534bae</color>
+        <color name="primaryDarkColor">#000051</color>
+        <color name="secondaryColor">#01579b</color>
+        <color name="secondaryLightColor">#4f83cc</color>
+        <color name="secondaryDarkColor">#002f6c</color>
+        <color name="primaryTextColor">#bbdefb</color>
+        <color name="secondaryTextColor">#d50000</color>
+
 
 
 </resources>

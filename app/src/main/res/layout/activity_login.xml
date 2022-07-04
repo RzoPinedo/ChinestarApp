@@ -64,10 +64,10 @@
                             <com.google.android.material.textfield.TextInputEditText
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:imeOptions="actionNext"
                                 android:background="@color/white"
+                                android:imeOptions="actionNext"
                                 android:inputType="textEmailAddress"
-                                android:typeface="sans"/>
+                                android:typeface="sans" />
 
                         </com.google.android.material.textfield.TextInputLayout>
 
