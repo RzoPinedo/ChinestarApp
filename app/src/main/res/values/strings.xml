@@ -16,14 +16,18 @@
     <string name="usuario">Usuario</string>
     <string name="usuario_help">usuario es tu email</string>
     <string name="usuario_error">ingresa email válido</string>
-    <string name="password">Password</string>
+    <string name="password">contraseña</string>
     <string name="password_help">usa solo números y letras</string>
     <string name="password_error">debe tener min 8 caracteres</string>
     <string name="btn_ingresar">Ingresar</string>
     <string name="btn_cancelar">Cancelar</string>
 
+    <!-- Main -->
+    <string name="text_Estreno">Estreno</string>
+    <string name="text_Cartelera">Cartelera</string>
+
     <!-- Registro -->
-    <string name="masculino">Masculin</string>
+    <string name="masculino">Masculino</string>
     <string name="femenino">Femenino</string>
     <string name="nombres">Nombres</string>
     <string name="apellidos">Apellidos</string>
