@@ -12,6 +12,7 @@ public class ConfiteriaActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_confiteria);
+        getSupportActionBar().hide();
     }
 
     //método para enlazar a otros activity

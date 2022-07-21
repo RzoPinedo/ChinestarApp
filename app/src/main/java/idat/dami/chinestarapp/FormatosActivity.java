@@ -12,6 +12,7 @@ public class FormatosActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_formatos);
+        getSupportActionBar().hide();
     }
 
     //método para enlazar a otros activity

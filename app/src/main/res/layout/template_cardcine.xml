@@ -21,11 +21,11 @@
 
             <ImageView
                 android:id="@+id/imagen"
-                android:layout_width="160dp"
-                android:layout_height="80dp"
-                android:layout_margin="10dp"
-                android:layout_weight="1"
-                app:srcCompat="@drawable/c_alcazar" />
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:layout_margin="5dp"
+                android:layout_weight="0.5"
+                app:srcCompat="@drawable/c_1" />
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -39,9 +39,9 @@
                     android:id="@+id/tvCine"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:paddingBottom="10dp"
+                    android:paddingBottom="5dp"
                     android:text="TextView"
-                    android:textSize="24sp" />
+                    android:textSize="20sp" />
 
                 <TextView
                     android:id="@+id/tvDireccion"
