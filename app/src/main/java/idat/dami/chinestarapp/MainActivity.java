@@ -30,4 +30,25 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
+    //método para enlazar a otros activity
+    public void irACines(View view) {
+        Intent objInicio = new Intent(this, CinesActivity.class);
+        startActivity(objInicio);
+    }
+
+    public void irAConfiteria(View view) {
+        Intent objInicio = new Intent(this, ConfiteriaActivity.class);
+        startActivity(objInicio);
+    }
+
+    public void irFormatos(View view) {
+        Intent objInicio = new Intent(this, FormatosActivity.class);
+        startActivity(objInicio);
+    }
+
+    public void irAPromociones(View view) {
+        Intent objInicio = new Intent(this, PromoActivity.class);
+        startActivity(objInicio);
+    }
+
 }

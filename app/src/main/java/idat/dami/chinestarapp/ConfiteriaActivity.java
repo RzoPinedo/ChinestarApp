@@ -14,4 +14,25 @@ public class ConfiteriaActivity extends AppCompatActivity {
         setContentView(R.layout.activity_confiteria);
     }
 
+    //método para enlazar a otros activity
+    public void irAInicio(View view) {
+        Intent objInicio = new Intent(this, MainActivity.class);
+        startActivity(objInicio);
+    }
+
+    public void irACines(View view) {
+        Intent objInicio = new Intent(this, CinesActivity.class);
+        startActivity(objInicio);
+    }
+
+    public void irFormatos(View view) {
+        Intent objInicio = new Intent(this, FormatosActivity.class);
+        startActivity(objInicio);
+    }
+
+    public void irAPromociones(View view) {
+        Intent objInicio = new Intent(this, PromoActivity.class);
+        startActivity(objInicio);
+    }
+
 }

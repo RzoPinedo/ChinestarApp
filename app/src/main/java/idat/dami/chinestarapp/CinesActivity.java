@@ -20,7 +20,6 @@ public class CinesActivity extends AppCompatActivity {
 
     private Spinner spinner1;
     private ListView lv;
-    private BottomNavigationView btn_nav;
 
 
     @Override
@@ -31,9 +30,6 @@ public class CinesActivity extends AppCompatActivity {
         getSupportActionBar().hide();
 
         spinner1 = (Spinner) findViewById(R.id.spinner);
-        btn_nav = (BottomNavigationView) findViewById(R.id.bottom_navigation);
-        Intent objInicio = new Intent(this, MainActivity.class);
-
 
         //icono en el actionbar
         //getSupportActionBar().setDisplayShowHomeEnabled(true);
@@ -69,6 +65,7 @@ public class CinesActivity extends AppCompatActivity {
         });
 
     }
+
 
     //método para enlazar a otros activity
     public void irAInicio(View view) {

@@ -14,4 +14,25 @@ public class FormatosActivity extends AppCompatActivity {
         setContentView(R.layout.activity_formatos);
     }
 
+    //método para enlazar a otros activity
+    public void irAInicio(View view) {
+        Intent objInicio = new Intent(this, MainActivity.class);
+        startActivity(objInicio);
+    }
+
+    public void irAConfiteria(View view) {
+        Intent objInicio = new Intent(this, ConfiteriaActivity.class);
+        startActivity(objInicio);
+    }
+
+    public void irCines(View view) {
+        Intent objInicio = new Intent(this, CinesActivity.class);
+        startActivity(objInicio);
+    }
+
+    public void irAPromociones(View view) {
+        Intent objInicio = new Intent(this, PromoActivity.class);
+        startActivity(objInicio);
+    }
+
 }
