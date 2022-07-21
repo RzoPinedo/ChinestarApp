@@ -35,14 +35,11 @@
             android:layout_marginLeft="20dp"
             tools:visibility="visible" />
 
-        <ListView
-            android:id="@+id/listview"
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerVCine"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent" />
 
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.494"
-            app:layout_constraintStart_toStartOf="parent" />
     </LinearLayout>
 
     <LinearLayout
