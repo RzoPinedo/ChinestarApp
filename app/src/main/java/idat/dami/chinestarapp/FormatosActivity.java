@@ -25,7 +25,7 @@ public class FormatosActivity extends AppCompatActivity {
         startActivity(objInicio);
     }
 
-    public void irCines(View view) {
+    public void irACines(View view) {
         Intent objInicio = new Intent(this, CinesActivity.class);
         startActivity(objInicio);
     }

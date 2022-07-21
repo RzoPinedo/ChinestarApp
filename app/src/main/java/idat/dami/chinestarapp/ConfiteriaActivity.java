@@ -25,7 +25,7 @@ public class ConfiteriaActivity extends AppCompatActivity {
         startActivity(objInicio);
     }
 
-    public void irFormatos(View view) {
+    public void irAFormatos(View view) {
         Intent objInicio = new Intent(this, FormatosActivity.class);
         startActivity(objInicio);
     }
