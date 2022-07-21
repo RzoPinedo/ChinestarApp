@@ -23,13 +23,22 @@
     <string name="btn_ingresar">Enter</string>
     <string name="btn_cancelar">Cancel</string>
 
+
+    <!-- Main -->
+    <string name="text_Estreno">Estreno</string>
+    <string name="text_Cartelera">Cartelera</string>
+
     <!-- Registro -->
-    <string name="masculino">Masculin</string>
-    <string name="femenino">Femenino</string>
-    <string name="nombres">Nombres</string>
-    <string name="apellidos">Apellidos</string>
-    <string name="registrar">Registrar</string>
-    <string name="fecha_nacimiento">Fecha de Nacimiento</string>
+    <string name="masculino">Men</string>
+    <string name="femenino">Woman</string>
+    <string name="nombres">Names</string>
+    <string name="apellidos">Surnames</string>
+    <string name="registrar">Register</string>
+    <string name="fecha_nacimiento">Date of birth</string>
+    <string name="genero">Gender:</string>
+    <string name="email">Email</string>
+    <string name="new_password">New password</string>
+    <string name="confirm_password">Confirm password</string>
 
 
 </resources>
