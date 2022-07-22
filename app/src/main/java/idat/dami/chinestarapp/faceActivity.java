@@ -15,7 +15,7 @@ public class faceActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_face);
-
+        getSupportActionBar().hide();
         videoView = (VideoView) findViewById(R.id.vv1);
 
         videoView.setVideoURI(Uri.parse("android.resource://" + getPackageName() + "/" + R.raw.face));

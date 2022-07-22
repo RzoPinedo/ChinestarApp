@@ -12,6 +12,7 @@ public class infectionActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        getSupportActionBar().hide();
         setContentView(R.layout.activity_infection);
 
         videoView = (VideoView) findViewById(R.id.vv1);

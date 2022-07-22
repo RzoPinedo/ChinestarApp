@@ -12,6 +12,7 @@ public class PromesaActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        getSupportActionBar().hide();
         setContentView(R.layout.activity_promesa);
 
         videoView = (VideoView) findViewById(R.id.vv1);
