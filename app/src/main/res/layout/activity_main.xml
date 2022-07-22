@@ -55,7 +55,8 @@
         app:layout_constraintHorizontal_bias="0.368"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/face" />
+        app:srcCompat="@drawable/face"
+        android:onClick="irAFace"/>
 
     <TextView
         android:id="@+id/textView3"
@@ -79,7 +80,8 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.554"
-        app:srcCompat="@drawable/edge" />
+        app:srcCompat="@drawable/edge"
+        android:onClick="irAEdge"/>
 
     <ImageView
         android:id="@+id/imageView2"
@@ -91,7 +93,8 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.55"
-        app:srcCompat="@drawable/infection" />
+        app:srcCompat="@drawable/infection"
+        android:onClick="irAInfection"/>
 
     <ImageView
         android:id="@+id/imageView5"
@@ -103,7 +106,8 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.555"
-        app:srcCompat="@drawable/promesa" />
+        app:srcCompat="@drawable/promesa"
+        android:onClick="irAPromesa"/>
 
     <LinearLayout
         android:id="@+id/linearLayout"

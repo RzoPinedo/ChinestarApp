@@ -57,4 +57,23 @@ public class MainActivity extends AppCompatActivity {
         startActivity(objInicio);
     }
 
+    public void irAFace(View view) {
+        Intent objInicio = new Intent(this, faceActivity.class);
+        startActivity(objInicio);
+    }
+
+    public void irAEdge(View view) {
+        Intent objInicio = new Intent(this, edgeActivity.class);
+        startActivity(objInicio);
+    }
+
+    public void irAInfection(View view) {
+        Intent objInicio = new Intent(this, infectionActivity.class);
+        startActivity(objInicio);
+    }
+
+    public void irAPromesa(View view) {
+        Intent objInicio = new Intent(this, PromesaActivity.class);
+        startActivity(objInicio);
+    }
 }
