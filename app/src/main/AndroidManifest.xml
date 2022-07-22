@@ -16,6 +16,12 @@
         android:windowSoftInputMode="adjustResize"
         tools:targetApi="31">
         <activity
+            android:name=".DetalleFormatoActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Formatos.DetalleFormatoActivity"
+            android:exported="false" />
+        <activity
             android:name=".ViewConfiteria.DetailActivityConfiteria"
             android:exported="false" />
         <activity
@@ -46,10 +52,10 @@
             android:name=".MainActivity"
             android:exported="false" />
         <activity
-            android:name=".PromoActivity"
+            android:name=".ViewPromociones.PromoActivity"
             android:exported="false" />
         <activity
-            android:name=".FormatosActivity"
+            android:name=".Formatos.FormatosActivity"
             android:exported="false" />
         <activity
             android:name=".ViewCine.CinesActivity"

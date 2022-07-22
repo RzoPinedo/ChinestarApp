@@ -14,9 +14,9 @@ import android.widget.Spinner;
 
 
 
-import idat.dami.chinestarapp.FormatosActivity;
+import idat.dami.chinestarapp.Formatos.FormatosActivity;
 import idat.dami.chinestarapp.MainActivity;
-import idat.dami.chinestarapp.PromoActivity;
+import idat.dami.chinestarapp.ViewPromociones.PromoActivity;
 import idat.dami.chinestarapp.R;
 import idat.dami.chinestarapp.ViewConfiteria.ConfiteriaActivity;
 import idat.dami.chinestarapp.model.Cine;

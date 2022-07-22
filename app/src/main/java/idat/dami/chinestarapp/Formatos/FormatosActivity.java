@@ -1,4 +1,4 @@
-package idat.dami.chinestarapp;
+package idat.dami.chinestarapp.Formatos;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -6,6 +6,9 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
+import idat.dami.chinestarapp.MainActivity;
+import idat.dami.chinestarapp.R;
+import idat.dami.chinestarapp.ViewPromociones.PromoActivity;
 import idat.dami.chinestarapp.ViewCine.CinesActivity;
 import idat.dami.chinestarapp.ViewConfiteria.ConfiteriaActivity;
 
@@ -36,6 +39,12 @@ public class FormatosActivity extends AppCompatActivity {
 
     public void irAPromociones(View view) {
         Intent objInicio = new Intent(this, PromoActivity.class);
+        startActivity(objInicio);
+    }
+
+    //saltar al Activiti Formatos
+    public void irDetalleFormato(View view) {
+        Intent objInicio = new Intent(this, DetalleFormatoActivity.class);
         startActivity(objInicio);
     }
 

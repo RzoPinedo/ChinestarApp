@@ -10,6 +10,8 @@ import android.view.View;
 
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
+import idat.dami.chinestarapp.Formatos.FormatosActivity;
+import idat.dami.chinestarapp.ViewPromociones.PromoActivity;
 import idat.dami.chinestarapp.ViewCine.CinesActivity;
 import idat.dami.chinestarapp.ViewConfiteria.ConfiteriaActivity;
 
