@@ -14,6 +14,7 @@ public class SonicActivvity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        getSupportActionBar().hide();
         setContentView(R.layout.activity_sonic_activvity);
 
         videoView = (VideoView) findViewById(R.id.vv1);
