@@ -1,4 +1,4 @@
-package idat.dami.chinestarapp;
+package idat.dami.chinestarapp.ViewCine;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
@@ -7,12 +7,18 @@ import androidx.recyclerview.widget.RecyclerView;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import java.util.ArrayList;
+import java.util.List;
 import android.widget.ArrayAdapter;
 import android.widget.Spinner;
 
-import java.util.ArrayList;
-import java.util.List;
 
+
+import idat.dami.chinestarapp.FormatosActivity;
+import idat.dami.chinestarapp.MainActivity;
+import idat.dami.chinestarapp.PromoActivity;
+import idat.dami.chinestarapp.R;
+import idat.dami.chinestarapp.ViewConfiteria.ConfiteriaActivity;
 import idat.dami.chinestarapp.model.Cine;
 
 public class CinesActivity extends AppCompatActivity {

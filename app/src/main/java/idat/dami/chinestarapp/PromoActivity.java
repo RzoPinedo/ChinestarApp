@@ -6,6 +6,9 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
+import idat.dami.chinestarapp.ViewCine.CinesActivity;
+import idat.dami.chinestarapp.ViewConfiteria.ConfiteriaActivity;
+
 public class PromoActivity extends AppCompatActivity {
 
     @Override

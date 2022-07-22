@@ -10,6 +10,9 @@ import android.view.View;
 
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
+import idat.dami.chinestarapp.ViewCine.CinesActivity;
+import idat.dami.chinestarapp.ViewConfiteria.ConfiteriaActivity;
+
 public class MainActivity extends AppCompatActivity {
 
     FloatingActionButton floatingActionButton;

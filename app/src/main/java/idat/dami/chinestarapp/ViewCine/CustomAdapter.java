@@ -1,4 +1,4 @@
-package idat.dami.chinestarapp;
+package idat.dami.chinestarapp.ViewCine;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
@@ -11,6 +11,7 @@ import android.widget.TextView;
 
 import java.util.List;
 
+import idat.dami.chinestarapp.R;
 import idat.dami.chinestarapp.model.Cine;
 
 public class CustomAdapter extends RecyclerView.Adapter<CustomAdapter.ViewHolder> {

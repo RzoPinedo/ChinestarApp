@@ -1,9 +1,11 @@
-package idat.dami.chinestarapp;
+package idat.dami.chinestarapp.ViewCine;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 import android.widget.TextView;
+
+import idat.dami.chinestarapp.R;
 
 public class DetailActivityCine extends AppCompatActivity {
 

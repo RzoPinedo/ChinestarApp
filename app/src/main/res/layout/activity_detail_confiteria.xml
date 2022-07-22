@@ -4,10 +4,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ViewCine.DetailActivityCine">
+    tools:context=".ViewConfiteria.DetailActivityConfiteria">
 
     <TextView
-        android:id="@+id/txCine"
+        android:id="@+id/txConfiteria"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="TextView"

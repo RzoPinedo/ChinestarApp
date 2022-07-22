@@ -9,6 +9,8 @@ import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
 import com.google.android.material.textfield.TextInputLayout;
 
+import idat.dami.chinestarapp.ViewCine.CinesActivity;
+
 
 public class LoginActivity extends AppCompatActivity {
     TextInputLayout usuario;
