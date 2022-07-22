@@ -276,7 +276,6 @@
             android:layout_width="wrap_content"
             android:layout_height="30dp"
             android:layout_margin="20dp"
-            android:onClick="irAConfiteria"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toEndOf="@+id/idCines"
             app:srcCompat="@drawable/ic_cinco" />
