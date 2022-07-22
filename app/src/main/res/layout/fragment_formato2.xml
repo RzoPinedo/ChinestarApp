@@ -20,10 +20,25 @@
         <TextView
             android:id="@+id/textView4"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:textSize="18sp"
+            android:layout_height="wrap_content"
+            android:textSize="24sp"
+            android:paddingLeft="15dp"
+            android:textStyle="bold"
             android:textColor="@color/black"
+
             android:text="@string/descripcion_real" />
+
+        <EditText
+            android:id="@+id/editTextTextMultiLine2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:gravity="start|top"
+            android:paddingTop="20dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:text="RealD 3D es la nueva generación de entretenimiento, con imágenes nítidas y claras para que te sientas como si estuvieras dentro de la película. Real D 3D agrega una profundidad que te sitúa en medio de la acción, ya sea al emprender un viaje por tierras desconocidas o al esquivar objetos tan realistas que parecen volar en la sala."
+            android:inputType="textMultiLine" />
     </LinearLayout>
 
 </FrameLayout>

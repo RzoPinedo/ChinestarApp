@@ -20,10 +20,24 @@
         <TextView
             android:id="@+id/textView4"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:textSize="18sp"
+            android:layout_height="wrap_content"
+            android:textSize="24sp"
+            android:paddingLeft="15dp"
+            android:textStyle="bold"
             android:textColor="@color/black"
             android:text="@string/descripcion_dbox" />
+
+        <EditText
+            android:id="@+id/editTextTextMultiLine"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:gravity="start|top"
+            android:paddingTop="20dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:text="El sistema D-BOX consiste en asientos que están programados para moverse con la película y así dar una sensación aún más realista de estar dentro de ella. Este sistema cuenta con niveles de intensidad que el espectador podrá controlar a su gusto o desconectarlo según su preferencia, es decir, es un sistema flexible, innovador y diferente de vivir el cine. La suma de estos efectos hará la experiencia de ver una película más espectacular, no solo por los efectos visuales de la película, sino por la sensación real de sentirse inmerso dentro de ella."
+            android:inputType="textMultiLine" />
     </LinearLayout>
 
 </FrameLayout>
