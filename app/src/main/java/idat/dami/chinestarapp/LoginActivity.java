@@ -20,6 +20,7 @@ public class LoginActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
+        getSupportActionBar().hide();
 
         usuario = findViewById(R.id.edUsuario);
         password = findViewById(R.id.edPassword);
@@ -44,7 +45,7 @@ public class LoginActivity extends AppCompatActivity {
             Toast.makeText(this, "Ingrese password", Toast.LENGTH_LONG).show();
         } else if (vUsuario.equals("admin") && vPassword.equals("admin")) {
             Toast.makeText(this, "Credenciales válidas", Toast.LENGTH_LONG).show();
-            Intent objInicio = new Intent(this, CinesActivity.class);
+            Intent objInicio = new Intent(this, MainActivity.class);
             startActivity(objInicio);
 
         } else {

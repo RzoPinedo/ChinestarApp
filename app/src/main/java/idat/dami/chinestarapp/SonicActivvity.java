@@ -9,19 +9,9 @@ import android.widget.VideoView;
 
 public class SonicActivvity extends AppCompatActivity {
 
-    VideoView videoView;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_sonic_activvity);
-
-        videoView = (VideoView) findViewById(R.id.vv1);
-
-        videoView.setVideoURI(Uri.parse("android.resource://" + getPackageName() + "/" + R.raw.video));
-        MediaController mediaController = new MediaController(this);
-        videoView.setMediaController(mediaController);
-
-        videoView.start();
     }
 }
