@@ -18,7 +18,7 @@ public class SonicActivvity extends AppCompatActivity {
 
         videoView = (VideoView) findViewById(R.id.vv1);
 
-        videoView.setVideoURI(Uri.parse("android.resource://" + getPackageName() + "/" + R.raw.video));
+        videoView.setVideoURI(Uri.parse("android.resource://" + getPackageName() + "/" + R.raw.sonic));
         MediaController mediaController = new MediaController(this);
         videoView.setMediaController(mediaController);
 

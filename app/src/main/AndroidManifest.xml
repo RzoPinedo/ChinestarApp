@@ -16,10 +16,19 @@
         android:windowSoftInputMode="adjustResize"
         tools:targetApi="31">
         <activity
-            android:name=".DetailActivityConfiteria"
+            android:name=".PromesaActivity"
             android:exported="false" />
         <activity
-            android:name=".ViewCine.DetailActivityCine"
+            android:name=".infectionActivity"
+            android:exported="false" />
+        <activity
+            android:name=".edgeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".faceActivity"
+            android:exported="false" />
+        <activity
+            android:name=".DetailActivityCine"
             android:exported="false" />
         <activity
             android:name=".SonicActivvity"
@@ -28,7 +37,7 @@
             android:name=".RegistroActivity"
             android:exported="false" />
         <activity
-            android:name=".ViewConfiteria.ConfiteriaActivity"
+            android:name=".ConfiteriaActivity"
             android:exported="false" />
         <activity
             android:name=".MainActivity"
@@ -40,7 +49,7 @@
             android:name=".FormatosActivity"
             android:exported="false" />
         <activity
-            android:name=".ViewCine.CinesActivity"
+            android:name=".CinesActivity"
             android:exported="false" />
         <activity
             android:name=".LoginActivity"
