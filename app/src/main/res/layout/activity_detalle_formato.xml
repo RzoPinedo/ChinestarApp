@@ -15,22 +15,23 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
+            android:background="@color/teal_200"
             android:layout_marginTop="10dp">
 
 
-            <ImageView
+            <ImageButton
                 android:id="@+id/img3D"
-                android:layout_width="210dp"
-                android:layout_height="100dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:layout_weight="1"
-                app:srcCompat="@drawable/f_1" />
+                app:srcCompat="@drawable/btn_real3d" />
 
-            <ImageView
+            <ImageButton
                 android:id="@+id/imgDBOX"
-                android:layout_width="210dp"
-                android:layout_height="100dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:layout_weight="1"
-                app:srcCompat="@drawable/f_2" />
+                app:srcCompat="@drawable/btn_dbox" />
 
         </LinearLayout>
 

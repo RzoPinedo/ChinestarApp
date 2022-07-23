@@ -16,9 +16,6 @@
         android:windowSoftInputMode="adjustResize"
         tools:targetApi="31">
         <activity
-            android:name=".DetalleFormatoActivity"
-            android:exported="false" />
-        <activity
             android:name=".Formatos.DetalleFormatoActivity"
             android:exported="false" />
         <activity

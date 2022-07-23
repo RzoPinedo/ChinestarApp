@@ -5,6 +5,7 @@
     android:layout_height="match_parent"
     android:layout_margin="0dp"
     android:orientation="vertical"
+    android:background="@color/white"
     android:padding="0dp">
 
     <ImageView
@@ -21,27 +22,31 @@
         android:orientation="horizontal"
         app:layout_constraintTop_toBottomOf="@+id/header">
 
-        <TextView
+        <Button
             android:id="@+id/btnEntradas"
-            android:layout_width="wrap_content"
-            android:layout_height="40dp"
+            android:layout_width="200dp"
+            android:layout_height="60dp"
+            android:layout_margin="5dp"
             android:layout_weight="1"
-            android:background="@color/red"
+            android:backgroundTint="@color/white"
             android:text="Entradas"
             android:textAlignment="center"
-            android:textColor="@color/white"
-            android:textSize="24sp" />
+            android:textColor="@color/red"
+            android:textSize="18sp"
+            android:textStyle="bold" />
 
-        <TextView
+        <Button
             android:id="@+id/btnFiestas"
-            android:layout_width="wrap_content"
-            android:layout_height="40dp"
+            android:layout_width="200dp"
+            android:layout_height="60dp"
+            android:layout_margin="5dp"
             android:layout_weight="1"
-            android:background="@color/red"
-            android:text="Fiestas Patrias"
+            android:backgroundTint="@color/white"
+            android:text="Promo Fiestas"
             android:textAlignment="center"
-            android:textColor="@color/white"
-            android:textSize="24sp" />
+            android:textColor="@color/red"
+            android:textSize="18sp"
+            android:textStyle="bold" />
 
     </LinearLayout>
 
