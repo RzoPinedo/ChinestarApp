@@ -16,6 +16,7 @@ import idat.dami.chinestarapp.ViewCine.CinesActivity;
 import idat.dami.chinestarapp.ViewConfiteria.ConfiteriaActivity;
 import idat.dami.chinestarapp.ViewPromociones.FragmentEntradas;
 import idat.dami.chinestarapp.ViewPromociones.FragmentFiestasPatrias;
+import idat.dami.chinestarapp.ViewPromociones.PromoActivity;
 
 public class DetalleFormatoActivity extends AppCompatActivity {
 
@@ -36,9 +37,9 @@ public class DetalleFormatoActivity extends AppCompatActivity {
             public void onClick(View v) {
                 FragmentManager fragmentManager = getSupportFragmentManager();
                 FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
-                Formatos entradasFragment = new Formatos();
 
-                fragmentTransaction.add(R.id.fragmentContentFormatos, entradasFragment);
+                Formatos formatoFragment = new Formatos();
+                fragmentTransaction.add(R.id.fragmentContentFormatos, formatoFragment);
                 fragmentTransaction.addToBackStack(null);
                 fragmentTransaction.commit();
             }
@@ -49,16 +50,35 @@ public class DetalleFormatoActivity extends AppCompatActivity {
             public void onClick(View v) {
                 FragmentManager fragmentManager = getSupportFragmentManager();
                 FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
-                Formato2 fiestasFragment = new Formato2();
 
-                fragmentTransaction.add(R.id.fragmentContentFormatos, fiestasFragment);
+                Formato2 formato2Fragment = new Formato2();
+                fragmentTransaction.add(R.id.fragmentContentFormatos, formato2Fragment);
                 fragmentTransaction.addToBackStack(null);
                 fragmentTransaction.commit();
             }
         });
     }
 
+    //método para enlazar a otros activity
+    public void irAInicio(View view) {
+        Intent objInicio = new Intent(this, MainActivity.class);
+        startActivity(objInicio);
+    }
 
+    public void irAConfiteria(View view) {
+        Intent objInicio = new Intent(this, ConfiteriaActivity.class);
+        startActivity(objInicio);
+    }
+
+    public void irFormatos(View view) {
+        Intent objInicio = new Intent(this, FormatosActivity.class);
+        startActivity(objInicio);
+    }
+
+    public void irAPromociones(View view) {
+        Intent objInicio = new Intent(this, PromoActivity.class);
+        startActivity(objInicio);
+    }
 
 
 }
