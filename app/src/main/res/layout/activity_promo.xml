@@ -91,6 +91,7 @@
             android:layout_width="wrap_content"
             android:layout_height="30dp"
             android:layout_margin="20dp"
+            android:onClick="irACines"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toEndOf="@+id/idInicio"
             app:srcCompat="@drawable/ic_baseline_location_on_24" />
@@ -120,7 +121,6 @@
             android:layout_width="wrap_content"
             android:layout_height="30dp"
             android:layout_margin="20dp"
-            android:onClick="irAPromociones"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toEndOf="@+id/idFormatos"
             app:srcCompat="@drawable/ic_tres" />
