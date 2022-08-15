@@ -65,4 +65,10 @@
     <string name="minions">Hasta los villanos tuvieron una adolescencia difícil, Minions: Nace Un Villano, la franquicia animada más grande de la historia y fenómeno cultural mundial, nos presenta a un Gru niño, de 12 años, y su sueño de convertirse en el supervillano más grande del mundo. En el corazón de la década de los setentas, en medio de una oleada de cabello con plumas y jeans acampanados, Gru (nominado al Oscar® Steve Carrell) está creciendo en los suburbios. Fan de un supergrupo de supervillanos conocido como Vicious 6, Gru trama un plan para volverse lo suficientemente malvado como para unirse a ellos. Por suerte, obtiene algunos refuerzos de sus fieles seguidores, los Minions. Juntos, Kevin, Stuart, Bob y Otto, un nuevo Minion y su necesidad desesperada de complacer, despliegan sus habilidades mientras ellos y Gru construyen su primera guarida, experimentan con sus primeras armas y realizan sus primeras misiones. Cuando los Vicious 6 expulsan a su líder, el legendario luchador Wild Knuckles (ganador del Oscar® Alan Arkin), Gru se entrevista para convertirse en su nuevo miembro. No va bien (por decir lo menos), y sólo empeora después de que Gru los supera y de repente se encuentra el enemigo mortal de la cúspide del mal. En la carrera, Gru recurrirá a una fuente poco probable de guía, el propio Wild Knuckles, y descubrirá que incluso los malos necesitan un poco de ayuda de sus amigos.</string>
 
 
+    <!-- Provincias Cines -->
+    <string name="provLima">Lima</string>
+    <string name="provLibertad">La Libertad</string>
+    <string name="provPiura">Piura</string>
+    <string name="provArequipa">Arequipa</string>
+
 </resources>
