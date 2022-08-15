@@ -15,8 +15,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
 
-        app:videoId="jYRtFFa4hT8"
-        app:autoPlay="false" />
+        app:autoPlay="false"
+        app:videoId="jYRtFFa4hT8" />
 
     <TextView
         android:id="@+id/tvTituloPelicula"
@@ -74,19 +74,20 @@
                 android:layout_height="wrap_content"
                 android:paddingTop="30dp"
                 android:text="Sinopsis"
-                android:textStyle="bold"
                 android:textColor="@color/azul"
-                android:textSize="20dp" />
+                android:textSize="20dp"
+                android:textStyle="bold" />
 
-            <EditText
+            <TextView
                 android:id="@+id/tvDescripcionSinopsis"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:ems="10"
                 android:gravity="start|top"
-                android:inputType="textMultiLine"
+                android:inputType="none"
                 android:text="@string/avatar2"
                 android:textColor="@color/azul"
+                android:textIsSelectable="false"
                 android:textSize="15dp" />
         </LinearLayout>
     </LinearLayout>
