@@ -65,33 +65,46 @@
                 android:textSize="20dp"
                 android:textStyle="bold" />
 
-            <TextView
-                android:id="@+id/tvDescripcionSinopsis"
+            <ScrollView
                 android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:paddingRight="5sp"
-                android:paddingLeft="5sp"
-                android:text="@string/world"
-                android:textColor="@color/black"
-                android:textSize="15dp" />
+                android:paddingLeft="5dp"
+                android:layout_marginBottom="80dp"
+                android:layout_height="match_parent">
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Director"
-                android:paddingRight="5sp"
-                android:paddingLeft="5sp"
-                android:textColor="@color/red"
-                android:textSize="20dp"
-                android:paddingTop="10sp"
-                android:textStyle="bold" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="null"
-                android:paddingRight="5sp"
-                android:paddingLeft="5sp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="5sp"
+                        android:paddingRight="5sp"
+                        android:text="null" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="5sp"
+                        android:paddingTop="10sp"
+                        android:paddingRight="5sp"
+                        android:text="Director"
+                        android:textColor="@color/red"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tvDescripcionSinopsis"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:paddingLeft="5sp"
+                        android:paddingRight="5sp"
+                        android:text="@string/world"
+                        android:textColor="@color/black"
+                        android:textSize="15dp" />
+                </LinearLayout>
+            </ScrollView>
 
         </LinearLayout>
 

@@ -1,28 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context=".AsesinoActivity"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    tools:context=".AsesinoActivity">
 
     <com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView
         android:id="@+id/youtube_player_view"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
 
-        app:videoId="50s-JEK_XQM"
-        app:autoPlay="false" />
+        app:autoPlay="false"
+        app:videoId="50s-JEK_XQM" />
 
     <TextView
         android:id="@+id/tvTituloPelicula"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:paddingLeft="5sp"
+        android:paddingRight="5sp"
         android:text="Asesino Sin Memoria"
         android:textColor="@color/red"
-        android:paddingRight="5sp"
-        android:paddingLeft="5sp"
         android:textSize="22sp"
         android:textStyle="bold" />
 
@@ -30,102 +30,115 @@
         android:id="@+id/tvDuracion"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:paddingRight="5sp"
         android:paddingLeft="5sp"
-        android:textStyle="bold"
-        android:text="Biografía | 1 h 54 min | +14" />
+        android:paddingRight="5sp"
+        android:text="Biografía | 1 h 54 min | +14"
+        android:textStyle="bold" />
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="match_parent"
         android:orientation="horizontal">
 
         <ImageView
-            android:layout_width="202dp"
-            android:layout_height="328dp"
-            app:srcCompat="@drawable/img_asesinossinmemoria"
-            android:paddingLeft="5sp"/>
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="5sp"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/img_asesinossinmemoria" />
 
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_weight="1"
             android:orientation="vertical">
 
             <TextView
                 android:id="@+id/tvSinopsis"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Sinopsis"
+                android:paddingLeft="5sp"
                 android:paddingTop="10sp"
                 android:paddingRight="5sp"
-                android:paddingLeft="5sp"
+                android:text="Sinopsis"
                 android:textColor="@color/red"
                 android:textSize="20dp"
                 android:textStyle="bold" />
 
-            <TextView
-                android:id="@+id/tvDescripcionSinopsis"
+            <ScrollView
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                android:paddingRight="5sp"
-                android:paddingLeft="5sp"
-                android:text="@string/asesinosinmemoria"
-                android:textColor="@color/black"
-                android:textSize="15dp" />
+                android:layout_marginBottom="80dp"
+                android:paddingLeft="5dp">
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Director"
-                android:paddingRight="5sp"
-                android:paddingLeft="5sp"
-                android:textColor="@color/red"
-                android:textSize="20dp"
-                android:paddingTop="10sp"
-                android:textStyle="bold" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Martin Campbell"
-                android:paddingRight="5sp"
-                android:paddingLeft="5sp"
-                android:textColor="@color/black"/>
-
-            <TextView
-                android:id="@+id/tvIdioma"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Idioma"
-                android:paddingTop="10sp"
-                android:paddingRight="5sp"
-                android:paddingLeft="5sp"
-                android:textColor="@color/red"
-                android:textSize="20dp"
-                android:textStyle="bold" />
-
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal">
-
-                <TextView
-                    android:layout_width="wrap_content"
+                <LinearLayout
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="SUBTITULADO"
-                    android:paddingRight="5sp"
-                    android:paddingLeft="5sp"
-                    />
+                    android:orientation="vertical">
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="DOBLADO"
-                    android:paddingRight="5sp"
-                    android:paddingLeft="5sp"
-                    />
+                    <TextView
+                        android:id="@+id/tvDescripcionSinopsis"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:paddingLeft="5sp"
+                        android:paddingRight="5sp"
+                        android:text="@string/asesinosinmemoria"
+                        android:textColor="@color/black"
+                        android:textSize="15dp" />
 
-            </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="5sp"
+                            android:paddingRight="5sp"
+                            android:text="SUBTITULADO" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="5sp"
+                            android:paddingRight="5sp"
+                            android:text="DOBLADO" />
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="5sp"
+                        android:paddingTop="10sp"
+                        android:paddingRight="5sp"
+                        android:text="Director"
+                        android:textColor="@color/red"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tvIdioma"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="5sp"
+                        android:paddingTop="10sp"
+                        android:paddingRight="5sp"
+                        android:text="Idioma"
+                        android:textColor="@color/red"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="5sp"
+                        android:paddingRight="5sp"
+                        android:text="Martin Campbell"
+                        android:textColor="@color/black" />
+                </LinearLayout>
+            </ScrollView>
 
         </LinearLayout>
 
