@@ -51,28 +51,28 @@
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
-            <TextView
-                android:id="@+id/tvSinopsis"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:paddingLeft="5sp"
-                android:paddingTop="10sp"
-                android:paddingRight="5sp"
-                android:text="Sinopsis"
-                android:textColor="@color/red"
-                android:textSize="20dp"
-                android:textStyle="bold" />
-
             <ScrollView
                 android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:layout_marginBottom="80dp"
-                android:paddingLeft="5dp">
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:paddingLeft="5dp"
+                android:paddingTop="15dp">
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tvSinopsis"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="5sp"
+                        android:paddingRight="5sp"
+                        android:text="Sinopsis"
+                        android:textColor="@color/red"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
 
                     <TextView
                         android:id="@+id/tvDescripcionSinopsis"
@@ -101,7 +101,47 @@
                         android:paddingLeft="5sp"
                         android:paddingRight="5sp"
                         android:text="null" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="5sp"
+                        android:paddingTop="10sp"
+                        android:paddingRight="5sp"
+                        android:text="Idioma"
+                        android:textColor="@color/red"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="5sp"
+                        android:paddingRight="5sp"
+                        android:textColor="@color/black"
+                        android:text="DOBLADA" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="5sp"
+                        android:paddingTop="10sp"
+                        android:paddingRight="5sp"
+                        android:text="Disponible"
+                        android:textColor="@color/red"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="5sp"
+                        android:paddingRight="5sp"
+                        android:textColor="@color/black"
+                        android:text="REGULAR, 2D" />
+
                 </LinearLayout>
+
             </ScrollView>
 
         </LinearLayout>
