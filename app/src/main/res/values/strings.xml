@@ -62,4 +62,10 @@
     <string name="asesinosinmemoria">Un asesino a sueldo descubre que se ha convertido en un objetivo después de que se niega a completar un trabajo para una peligrosa organización criminal.</string>
     <string name="nickjr">Por primera vez juntos en pantalla grande llegan los personajes más queridos de Nick Jr: Paw Patrol, Santiago de Los Mares, Las Pistas de Blue y Tú, y Baby Shark. Esta increíble experiencia será presentada por nuestros amigos de Garden Academy, quienes nos acompañarán en las aventuras más divertidas. Cada uno de los episodios exclusivos nos mostrará historias nunca antes vistas, con toda la magia del cine para los más pequeños de la casa, de la mano de Nick Jr.</string>
 
+    <!-- Provincias Cines -->
+    <string name="provLima">Lima</string>
+    <string name="provLibertad">La Libertad</string>
+    <string name="provPiura">Piura</string>
+    <string name="provArequipa">Arequipa</string>
+
 </resources>
