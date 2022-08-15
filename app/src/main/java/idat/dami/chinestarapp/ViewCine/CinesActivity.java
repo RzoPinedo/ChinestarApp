@@ -15,8 +15,8 @@ import android.widget.Spinner;
 
 
 import idat.dami.chinestarapp.Formatos.FormatosActivity;
-import idat.dami.chinestarapp.MainActivity;
-import idat.dami.chinestarapp.ViewPromociones.PromoActivity;
+import idat.dami.chinestarapp.Inicio.CarteleraActivity;
+import idat.dami.chinestarapp.ViewComentarios.ComentariosActivity;
 import idat.dami.chinestarapp.R;
 import idat.dami.chinestarapp.ViewConfiteria.ConfiteriaActivity;
 import idat.dami.chinestarapp.model.Cine;
@@ -71,7 +71,7 @@ public class CinesActivity extends AppCompatActivity {
 
     //método para enlazar a otros activity
     public void irAInicio(View view) {
-        Intent objInicio = new Intent(this, MainActivity.class);
+        Intent objInicio = new Intent(this, CarteleraActivity.class);
         startActivity(objInicio);
     }
 
@@ -86,7 +86,7 @@ public class CinesActivity extends AppCompatActivity {
     }
 
     public void irAPromociones(View view) {
-        Intent objInicio = new Intent(this, PromoActivity.class);
+        Intent objInicio = new Intent(this, ComentariosActivity.class);
         startActivity(objInicio);
     }
 

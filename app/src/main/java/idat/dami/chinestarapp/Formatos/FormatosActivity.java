@@ -6,7 +6,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
-import idat.dami.chinestarapp.MainActivity;
+import idat.dami.chinestarapp.Inicio.CarteleraActivity;
 import idat.dami.chinestarapp.R;
 import idat.dami.chinestarapp.ViewPromociones.PromoActivity;
 import idat.dami.chinestarapp.ViewCine.CinesActivity;
@@ -23,7 +23,7 @@ public class FormatosActivity extends AppCompatActivity {
 
     //método para enlazar a otros activity
     public void irAInicio(View view) {
-        Intent objInicio = new Intent(this, MainActivity.class);
+        Intent objInicio = new Intent(this, CarteleraActivity.class);
         startActivity(objInicio);
     }
 

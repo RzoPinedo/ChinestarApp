@@ -38,9 +38,22 @@
     <string name="new_password">Nueva Contraseña</string>
     <string name="confirm_password">Confirmar contraseña</string>
     <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 
-    <!-- formato-->
+    <string name="descripcion_dbox">Formato DBOX</string>
+    <string name="descripcion_real">Formato 3D</string>
+    <string name="title_activity_comentarios">ComentariosActivity</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
 
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+
+    <!-- Sinopsis de Peliculas -->
+    <string name="avatar2">Ambientada más de una década después de los sucesos que tuvieron lugar en la primera película, AVATAR: EL CAMINO DEL AGUA narra la historia de la familia Sully (Jake, Neytiri y sus hijos), el peligro que los persigue, los esfuerzos que hacen para mantenerse a salvo, las batallas que libran para seguir con vida, y las tragedias que sobrellevan.</string>
 
 
 </resources>
