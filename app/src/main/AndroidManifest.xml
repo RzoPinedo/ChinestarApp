@@ -25,7 +25,7 @@
             android:name=".Inicio.DetallePeliculaActivity"
             android:exported="false" />
         <activity
-            android:name=".Inicio.CarteleraActivity"
+            android:name=".LoginActivity"
             android:exported="false" />
         <activity
             android:name=".ViewComentarios.ComentariosActivity"
@@ -58,7 +58,7 @@
             android:name=".ViewCine.CinesActivity"
             android:exported="false" />
         <activity
-            android:name=".LoginActivity"
+            android:name=".Inicio.CarteleraActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

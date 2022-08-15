@@ -8,8 +8,13 @@ import android.view.View;
 
 
 import idat.dami.chinestarapp.AvatarActivity2;
+import idat.dami.chinestarapp.Formatos.FormatosActivity;
 import idat.dami.chinestarapp.JurasicWorl;
 import idat.dami.chinestarapp.R;
+import idat.dami.chinestarapp.ViewCine.CinesActivity;
+import idat.dami.chinestarapp.ViewComentarios.ComentariosActivity;
+import idat.dami.chinestarapp.ViewConfiteria.ConfiteriaActivity;
+import idat.dami.chinestarapp.ViewPromociones.PromoActivity;
 
 public class CarteleraActivity extends AppCompatActivity {
 
@@ -17,6 +22,35 @@ public class CarteleraActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_cartelera);
+        getSupportActionBar().hide();
+    }
+
+    //Intent para Activities
+
+    //método para enlazar a otros activity
+    public void irACines(View view) {
+        Intent objInicio = new Intent(this, CinesActivity.class);
+        startActivity(objInicio);
+    }
+
+    public void irAConfiteria(View view) {
+        Intent objInicio = new Intent(this, ConfiteriaActivity.class);
+        startActivity(objInicio);
+    }
+
+    public void irFormatos(View view) {
+        Intent objInicio = new Intent(this, FormatosActivity.class);
+        startActivity(objInicio);
+    }
+
+    public void irAPromociones(View view) {
+        Intent objInicio = new Intent(this, PromoActivity.class);
+        startActivity(objInicio);
+    }
+
+    public void irAComentarios(View view) {
+        Intent objInicio = new Intent(this, ComentariosActivity.class);
+        startActivity(objInicio);
     }
 
     //click para ver los trailers

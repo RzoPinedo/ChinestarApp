@@ -11,8 +11,11 @@
     <ImageView
         android:id="@+id/header"
         android:layout_width="match_parent"
-        android:layout_height="100dp"
-        app:srcCompat="@drawable/header2_usuario_" />
+        android:layout_height="80dp"
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop"
+        app:srcCompat="@drawable/header2_usuario_"
+        android:layout_marginBottom="10dp"/>
 
     <LinearLayout
         android:layout_width="match_parent"
