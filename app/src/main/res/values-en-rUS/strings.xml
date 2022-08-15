@@ -40,6 +40,5 @@
     <string name="new_password">New password</string>
     <string name="confirm_password">Confirm password</string>
 
-    <string name="descripcion_dbox_">Formato DBOX</string>
-    <string name="descripcion_real_">Formato 3D</string>
+
 </resources>
