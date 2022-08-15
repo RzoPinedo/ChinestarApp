@@ -16,6 +16,24 @@
         android:windowSoftInputMode="adjustResize"
         tools:targetApi="31">
         <activity
+            android:name=".NickjrActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AsesinoActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ElvisActivity"
+            android:exported="false" />
+        <activity
+            android:name=".DinoActivity"
+            android:exported="false" />
+        <activity
+            android:name=".BestiaActivity"
+            android:exported="false" />
+        <activity
+            android:name=".CAmigosActivity"
+            android:exported="false" />
+        <activity
             android:name=".JurasicWorl"
             android:exported="false" />
         <activity
@@ -38,9 +56,6 @@
             android:exported="false" />
         <activity
             android:name=".ViewCine.DetailActivityCine"
-            android:exported="false" />
-        <activity
-            android:name=".edgeActivity"
             android:exported="false" />
         <activity
             android:name=".RegistroActivity"

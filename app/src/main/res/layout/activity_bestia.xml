@@ -1,26 +1,26 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
-    tools:context=".AvatarActivity2">
+    tools:context=".BestiaActivity">
 
     <com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView
         android:id="@+id/youtube_player_view"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
 
-        app:videoId="jYRtFFa4hT8"
+        app:videoId="xTANWIJcSIM"
         app:autoPlay="false" />
 
     <TextView
         android:id="@+id/tvTituloPelicula"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Avatar El Camino del Agua"
+        android:text="Bestia"
         android:textColor="@color/red"
         android:paddingRight="5sp"
         android:paddingLeft="5sp"
@@ -34,7 +34,7 @@
         android:paddingRight="5sp"
         android:paddingLeft="5sp"
         android:textStyle="bold"
-        android:text="(R) Acción | 2 h | +14" />
+        android:text="(R) Acción | 1 h 40 min | +14" />
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -44,7 +44,7 @@
         <ImageView
             android:layout_width="202dp"
             android:layout_height="328dp"
-            app:srcCompat="@drawable/img_avatar2"
+            app:srcCompat="@drawable/img_bestia"
             android:paddingLeft="5sp"/>
 
         <LinearLayout
@@ -70,7 +70,7 @@
                 android:layout_height="match_parent"
                 android:paddingRight="5sp"
                 android:paddingLeft="5sp"
-                android:text="@string/avatar2"
+                android:text="@string/bestia"
                 android:textColor="@color/black"
                 android:textSize="15dp" />
 
@@ -91,6 +91,41 @@
                 android:text="null"
                 android:paddingRight="5sp"
                 android:paddingLeft="5sp"/>
+
+            <TextView
+                android:id="@+id/tvIdioma"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Idioma"
+                android:paddingTop="10sp"
+                android:paddingRight="5sp"
+                android:paddingLeft="5sp"
+                android:textColor="@color/red"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="SUBTITULADO"
+                    android:paddingRight="5sp"
+                    android:paddingLeft="5sp"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="DOBLADO"
+                    android:paddingRight="5sp"
+                    android:paddingLeft="5sp"
+                    />
+
+            </LinearLayout>
 
         </LinearLayout>
 

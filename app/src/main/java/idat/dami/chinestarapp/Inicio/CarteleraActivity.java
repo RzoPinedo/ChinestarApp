@@ -7,7 +7,12 @@ import android.os.Bundle;
 import android.view.View;
 
 
+import idat.dami.chinestarapp.AsesinoActivity;
 import idat.dami.chinestarapp.AvatarActivity2;
+import idat.dami.chinestarapp.BestiaActivity;
+import idat.dami.chinestarapp.CAmigosActivity;
+import idat.dami.chinestarapp.DinoActivity;
+import idat.dami.chinestarapp.ElvisActivity;
 import idat.dami.chinestarapp.Formatos.FormatosActivity;
 import idat.dami.chinestarapp.JurasicWorl;
 import idat.dami.chinestarapp.R;
@@ -55,40 +60,7 @@ public class CarteleraActivity extends AppCompatActivity {
 
     //click para ver los trailers
     /*
-    public void startCuarto666(View view) {
-        Intent objInicio = new Intent(this, AvatarActivity2.class);
-        startActivity(objInicio);
-    }
-    public void startAsesinosSinMemoria(View view) {
-        Intent objInicio = new Intent(this, AvatarActivity2.class);
-        startActivity(objInicio);
-    }
-    public void startCosasAmigos(View view) {
-        Intent objInicio = new Intent(this, AvatarActivity2.class);
-        startActivity(objInicio);
-    }
-    public void startLaBestia(View view) {
-        Intent objInicio = new Intent(this, AvatarActivity2.class);
-        startActivity(objInicio);
-    }
-    public void startDinoKing(View view) {
-        Intent objInicio = new Intent(this, AvatarActivity2.class);
-        startActivity(objInicio);
-    }
-    public void startElvis(View view) {
-        Intent objInicio = new Intent(this, AvatarActivity2.class);
-        startActivity(objInicio);
-    }
-
     public void startNickJr(View view) {
-        Intent objInicio = new Intent(this, AvatarActivity2.class);
-        startActivity(objInicio);
-    }
-    public void startJurasicWorl(View view) {
-        Intent objInicio = new Intent(this, AvatarActivity2.class);
-        startActivity(objInicio);
-    }
-    public void startLightyear(View view) {
         Intent objInicio = new Intent(this, AvatarActivity2.class);
         startActivity(objInicio);
     }
@@ -109,6 +81,31 @@ public class CarteleraActivity extends AppCompatActivity {
 
     public void startJurasicWorl(View view) {
         Intent objInicio = new Intent(this, JurasicWorl.class);
+        startActivity(objInicio);
+    }
+
+    public void startCosasAmigos(View view) {
+        Intent objInicio = new Intent(this, CAmigosActivity.class);
+        startActivity(objInicio);
+    }
+
+    public void startLaBestia(View view) {
+        Intent objInicio = new Intent(this, BestiaActivity.class);
+        startActivity(objInicio);
+    }
+
+    public void startDinoKing(View view) {
+        Intent objInicio = new Intent(this, DinoActivity.class);
+        startActivity(objInicio);
+    }
+
+    public void startElvis(View view) {
+        Intent objInicio = new Intent(this, ElvisActivity.class);
+        startActivity(objInicio);
+    }
+
+    public void startAsesinosSinMemoria(View view) {
+        Intent objInicio = new Intent(this, AsesinoActivity.class);
         startActivity(objInicio);
     }
 }
