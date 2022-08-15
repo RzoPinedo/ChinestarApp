@@ -38,8 +38,9 @@
     <string name="new_password">Nueva Contraseña</string>
     <string name="confirm_password">Confirmar contraseña</string>
     <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
 
-    <string name="descripcion_dbox">Formato DBOX</string>
-    <string name="descripcion_real">Formato 3D</string>
+    <!-- formato-->
+
+
+
 </resources>

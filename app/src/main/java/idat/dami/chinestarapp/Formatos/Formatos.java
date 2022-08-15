@@ -12,7 +12,7 @@ import idat.dami.chinestarapp.R;
 
 /**
  * A simple {@link Fragment} subclass.
- * Use the {@link Formatos#newInstance} factory method to
+ * Use the {@link Formatos#} factory method to
  * create an instance of this fragment.
  */
 public class Formatos extends Fragment {

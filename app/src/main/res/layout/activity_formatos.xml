@@ -33,9 +33,9 @@
             android:id="@+id/imagen3D"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
             android:onClick="irDetalleFormato"
-            app:srcCompat="@drawable/real_d_3d"
-            android:layout_marginTop="40dp"/>
+            app:srcCompat="@drawable/real_d_3d" />
     </LinearLayout>
 
     <LinearLayout
