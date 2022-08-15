@@ -15,7 +15,10 @@ import idat.dami.chinestarapp.DinoActivity;
 import idat.dami.chinestarapp.ElvisActivity;
 import idat.dami.chinestarapp.Formatos.FormatosActivity;
 import idat.dami.chinestarapp.JurasicWorl;
+import idat.dami.chinestarapp.MinionsActivity;
+import idat.dami.chinestarapp.NickjrActivity;
 import idat.dami.chinestarapp.R;
+import idat.dami.chinestarapp.ThorActivity;
 import idat.dami.chinestarapp.ViewCine.CinesActivity;
 import idat.dami.chinestarapp.ViewComentarios.ComentariosActivity;
 import idat.dami.chinestarapp.ViewConfiteria.ConfiteriaActivity;
@@ -59,20 +62,6 @@ public class CarteleraActivity extends AppCompatActivity {
     }
 
     //click para ver los trailers
-    /*
-    public void startNickJr(View view) {
-        Intent objInicio = new Intent(this, AvatarActivity2.class);
-        startActivity(objInicio);
-    }
-    public void startThorAmorYTrueno(View view) {
-        Intent objInicio = new Intent(this, AvatarActivity2.class);
-        startActivity(objInicio);
-    }
-    public void startMinions(View view) {
-        Intent objInicio = new Intent(this, AvatarActivity2.class);
-        startActivity(objInicio);
-    }
-     */
 
     public void startAvatar2(View view) {
         Intent objInicio = new Intent(this, AvatarActivity2.class);
@@ -106,6 +95,21 @@ public class CarteleraActivity extends AppCompatActivity {
 
     public void startAsesinosSinMemoria(View view) {
         Intent objInicio = new Intent(this, AsesinoActivity.class);
+        startActivity(objInicio);
+    }
+
+    public void startNickJr(View view) {
+        Intent objInicio = new Intent(this, NickjrActivity.class);
+        startActivity(objInicio);
+    }
+
+    public void startThorAmorYTrueno(View view) {
+        Intent objInicio = new Intent(this, ThorActivity.class);
+        startActivity(objInicio);
+    }
+
+    public void startMinions(View view) {
+        Intent objInicio = new Intent(this, MinionsActivity.class);
         startActivity(objInicio);
     }
 }
