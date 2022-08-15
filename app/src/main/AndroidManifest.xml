@@ -16,6 +16,21 @@
         android:windowSoftInputMode="adjustResize"
         tools:targetApi="31">
         <activity
+            android:name=".JurasicWorl"
+            android:exported="false" />
+        <activity
+            android:name=".AvatarActivity2"
+            android:exported="false" />
+        <activity
+            android:name=".Inicio.DetallePeliculaActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Inicio.CarteleraActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ViewComentarios.ComentariosActivity"
+            android:exported="false" />
+        <activity
             android:name=".Formatos.DetalleFormatoActivity"
             android:exported="false" />
         <activity
@@ -25,28 +40,13 @@
             android:name=".ViewCine.DetailActivityCine"
             android:exported="false" />
         <activity
-            android:name=".PromesaActivity"
-            android:exported="false" />
-        <activity
-            android:name=".infectionActivity"
-            android:exported="false" />
-        <activity
             android:name=".edgeActivity"
-            android:exported="false" />
-        <activity
-            android:name=".faceActivity"
-            android:exported="false" />
-        <activity
-            android:name=".SonicActivvity"
             android:exported="false" />
         <activity
             android:name=".RegistroActivity"
             android:exported="false" />
         <activity
             android:name=".ViewConfiteria.ConfiteriaActivity"
-            android:exported="false" />
-        <activity
-            android:name=".MainActivity"
             android:exported="false" />
         <activity
             android:name=".ViewPromociones.PromoActivity"

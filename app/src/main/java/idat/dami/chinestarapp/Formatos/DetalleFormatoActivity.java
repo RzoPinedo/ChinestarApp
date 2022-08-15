@@ -8,14 +8,10 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
-import android.widget.TextView;
 
-import idat.dami.chinestarapp.MainActivity;
+import idat.dami.chinestarapp.Inicio.CarteleraActivity;
 import idat.dami.chinestarapp.R;
-import idat.dami.chinestarapp.ViewCine.CinesActivity;
 import idat.dami.chinestarapp.ViewConfiteria.ConfiteriaActivity;
-import idat.dami.chinestarapp.ViewPromociones.FragmentEntradas;
-import idat.dami.chinestarapp.ViewPromociones.FragmentFiestasPatrias;
 import idat.dami.chinestarapp.ViewPromociones.PromoActivity;
 
 public class DetalleFormatoActivity extends AppCompatActivity {
@@ -61,7 +57,7 @@ public class DetalleFormatoActivity extends AppCompatActivity {
 
     //método para enlazar a otros activity
     public void irAInicio(View view) {
-        Intent objInicio = new Intent(this, MainActivity.class);
+        Intent objInicio = new Intent(this, CarteleraActivity.class);
         startActivity(objInicio);
     }
 

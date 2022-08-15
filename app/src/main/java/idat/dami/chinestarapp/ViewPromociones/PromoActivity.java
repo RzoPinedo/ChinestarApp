@@ -10,7 +10,7 @@ import android.view.View;
 import android.widget.TextView;
 
 import idat.dami.chinestarapp.Formatos.FormatosActivity;
-import idat.dami.chinestarapp.MainActivity;
+import idat.dami.chinestarapp.Inicio.CarteleraActivity;
 import idat.dami.chinestarapp.R;
 import idat.dami.chinestarapp.ViewCine.CinesActivity;
 import idat.dami.chinestarapp.ViewConfiteria.ConfiteriaActivity;
@@ -59,7 +59,7 @@ public class PromoActivity extends AppCompatActivity {
 
     //método para enlazar a otros activity
     public void irAInicio(View view) {
-        Intent objInicio = new Intent(this, MainActivity.class);
+        Intent objInicio = new Intent(this, CarteleraActivity.class);
         startActivity(objInicio);
     }
 

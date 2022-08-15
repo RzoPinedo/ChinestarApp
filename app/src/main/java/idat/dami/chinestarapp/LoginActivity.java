@@ -9,6 +9,7 @@ import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
 import com.google.android.material.textfield.TextInputLayout;
 
+import idat.dami.chinestarapp.Inicio.CarteleraActivity;
 import idat.dami.chinestarapp.ViewCine.CinesActivity;
 
 
@@ -47,7 +48,7 @@ public class LoginActivity extends AppCompatActivity {
             Toast.makeText(this, "Ingrese password", Toast.LENGTH_LONG).show();
         } else if (vUsuario.equals("admin") && vPassword.equals("admin")) {
             Toast.makeText(this, "Credenciales válidas", Toast.LENGTH_LONG).show();
-            Intent objInicio = new Intent(this, MainActivity.class);
+            Intent objInicio = new Intent(this, CarteleraActivity.class);
             startActivity(objInicio);
 
         } else {
