@@ -15,14 +15,14 @@
 
     <!--?xml version="1.0" encoding="UTF-8"?-->
 
-        <color name="primaryColor">#1a237e</color>
+        <color name="primaryColor">#F11313</color>
         <color name="primaryLightColor">#534bae</color>
         <color name="primaryDarkColor">#000051</color>
         <color name="secondaryColor">#01579b</color>
         <color name="secondaryLightColor">#4f83cc</color>
         <color name="secondaryDarkColor">#002f6c</color>
         <color name="primaryTextColor">#434547</color>
-        <color name="secondaryTextColor">#d50000</color>
+        <color name="secondaryTextColor">#3F51B5</color>
 
 
 
