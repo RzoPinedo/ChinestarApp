@@ -3,19 +3,11 @@ package idat.dami.chinestarapp.ViewCine;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
-import androidx.recyclerview.widget.LinearLayoutManager;
-import androidx.recyclerview.widget.RecyclerView;
 
-import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
-import java.util.ArrayList;
-import java.util.List;
-
-import android.widget.ArrayAdapter;
-import android.widget.Spinner;
 import android.widget.TextView;
 
 
@@ -24,8 +16,6 @@ import idat.dami.chinestarapp.Inicio.CarteleraActivity;
 import idat.dami.chinestarapp.ViewComentarios.ComentariosActivity;
 import idat.dami.chinestarapp.R;
 import idat.dami.chinestarapp.ViewConfiteria.ConfiteriaActivity;
-import idat.dami.chinestarapp.ViewPromociones.FragmentEntradas;
-import idat.dami.chinestarapp.model.Cine;
 
 public class CinesActivity extends AppCompatActivity {
 
