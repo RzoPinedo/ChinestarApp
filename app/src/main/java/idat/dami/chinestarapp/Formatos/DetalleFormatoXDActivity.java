@@ -8,6 +8,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.TextView;
 
 import idat.dami.chinestarapp.Inicio.CarteleraActivity;
 import idat.dami.chinestarapp.R;
@@ -17,8 +18,8 @@ import idat.dami.chinestarapp.ViewPromociones.PromoActivity;
 
 public class DetalleFormatoXDActivity extends AppCompatActivity {
 
-    private Button btn_informesXD;
-    private Button btn_horariosXD;
+    private TextView btn_informesXD;
+    private TextView btn_horariosXD;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
