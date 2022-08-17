@@ -8,6 +8,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
+import android.widget.TextView;
 
 import idat.dami.chinestarapp.Inicio.CarteleraActivity;
 import idat.dami.chinestarapp.R;
@@ -16,8 +17,8 @@ import idat.dami.chinestarapp.ViewPromociones.PromoActivity;
 
 public class DetalleFormatoActivity extends AppCompatActivity {
 
-    private ImageView btn_dbox;
-    private ImageView btn_real;
+    private TextView btn_informes;
+    private TextView btn_horarios;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,30 +26,33 @@ public class DetalleFormatoActivity extends AppCompatActivity {
         setContentView(R.layout.activity_detalle_formato);
         getSupportActionBar().hide();
 
-        btn_dbox = findViewById(R.id.imgDBOX);
-        btn_real = findViewById(R.id.img3D);
+        btn_informes = findViewById(R.id.btnInforme);
+        btn_horarios = findViewById(R.id.btnHorarios);
 
-        btn_dbox.setOnClickListener(new View.OnClickListener() {
+        btn_informes.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 FragmentManager fragmentManager = getSupportFragmentManager();
                 FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
 
-                Formatos formatoFragment = new Formatos();
-                fragmentTransaction.add(R.id.fragmentContentFormatos, formatoFragment);
+                Formatos fragmentFormatos = new Formatos();
+                fragmentManager.clearBackStack(null);
+
+                fragmentTransaction.add(R.id.fragmentContentFormatos, fragmentFormatos);
                 fragmentTransaction.addToBackStack(null);
                 fragmentTransaction.commit();
             }
         });
 
-        btn_real.setOnClickListener(new View.OnClickListener() {
+        btn_horarios.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 FragmentManager fragmentManager = getSupportFragmentManager();
                 FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
 
-                Formato2 formato2Fragment = new Formato2();
-                fragmentTransaction.add(R.id.fragmentContentFormatos, formato2Fragment);
+                Fragmento_horarioDBOX fragmentHorarioDBOX = new Fragmento_horarioDBOX();
+                fragmentManager.clearBackStack(null);
+                fragmentTransaction.add(R.id.fragmentContentFormatos, fragmentHorarioDBOX);
                 fragmentTransaction.addToBackStack(null);
                 fragmentTransaction.commit();
             }

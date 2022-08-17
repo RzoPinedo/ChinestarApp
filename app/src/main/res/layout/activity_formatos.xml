@@ -33,12 +33,13 @@
             android:layout_marginTop="30dp"/>
 
         <ImageView
-            android:id="@+id/imagen3D"
+            android:id="@+id/imageView3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="40dp"
             android:onClick="irDetalleFormato"
-            app:srcCompat="@drawable/real_d_3d" />
+            app:srcCompat="@drawable/salaxdxd"
+            android:layout_marginTop="30dp"/>
+
     </LinearLayout>
 
     <LinearLayout
