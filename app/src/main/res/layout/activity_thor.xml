@@ -153,37 +153,38 @@
                         android:layout_height="wrap_content"
                         android:orientation="horizontal">
 
-                        <LinearLayout
+                        <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:orientation="horizontal">
+                            android:paddingLeft="10dp"
+                            android:paddingRight="10dp"
+                            android:background="@drawable/bordes_redondeados"
+                            android:textColor="@color/black"
+                            android:text="SUBTITULOS" />
 
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:paddingLeft="10dp"
-                                android:paddingRight="10dp"
-                                android:background="@drawable/bordes_redondeados"
-                                android:textColor="@color/black"
-                                android:text="SUBTITULOS" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=" "/>
 
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:text=" "/>
-
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:paddingLeft="10dp"
-                                android:paddingRight="10dp"
-                                android:background="@drawable/bordes_redondeados"
-                                android:textColor="@color/black"
-                                android:text="DOBLADO" />
-
-                        </LinearLayout>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="10dp"
+                            android:paddingRight="10dp"
+                            android:background="@drawable/bordes_redondeados"
+                            android:textColor="@color/black"
+                            android:text="DOBLADO" />
 
                     </LinearLayout>
+
+                    <com.google.android.material.divider.MaterialDivider
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:dividerInsetStart="5dp"
+                        android:layout_marginTop="10dp"
+                        app:dividerInsetEnd="10dp"
+                        app:dividerColor="@color/red"/>
 
                     <TextView
                         android:id="@+id/tvdisponible"
