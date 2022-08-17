@@ -22,24 +22,35 @@
 
         <LinearLayout
             android:layout_width="match_parent"
+            android:paddingTop="5dp"
             android:layout_height="wrap_content"
             android:orientation="horizontal">
 
-            <Button
+            <TextView
                 android:id="@+id/btnFormatoDetalleInformeXD"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginHorizontal="5dp"
                 android:layout_weight="1"
-                android:text="Informes" />
+                android:background="@drawable/bordes_redondeados"
+                android:text="Informes"
+                android:textAlignment="center"
+                android:textColor="@color/red"
+                android:textSize="18sp"
+                android:textStyle="bold" />
 
-            <Button
+            <TextView
                 android:id="@+id/btnFormatoDetalleHorarioXD"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginHorizontal="5dp"
                 android:layout_weight="1"
-                android:text="horarios" />
+                android:background="@drawable/bordes_redondeados"
+                android:text="horarios"
+                android:textAlignment="center"
+                android:textColor="@color/red"
+                android:textSize="18sp"
+                android:textStyle="bold" />
         </LinearLayout>
 
         <androidx.fragment.app.FragmentContainerView
