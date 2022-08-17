@@ -17,7 +17,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/header2_usuario_" />
+        app:srcCompat="@drawable/header_sin_usuario" />
 
     <LinearLayout
         android:id="@+id/contentButtons"
