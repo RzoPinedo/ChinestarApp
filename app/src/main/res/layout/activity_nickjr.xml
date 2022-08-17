@@ -51,45 +51,98 @@
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
-            <TextView
-                android:id="@+id/tvSinopsis"
+            <ScrollView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Sinopsis"
-                android:paddingTop="10sp"
-                android:paddingRight="5sp"
-                android:paddingLeft="5sp"
-                android:textColor="@color/red"
-                android:textSize="20dp"
-                android:textStyle="bold" />
+                android:layout_marginBottom="10dp"
+                android:paddingLeft="5dp"
+                android:paddingTop="15dp">
 
-            <TextView
-                android:id="@+id/tvDescripcionSinopsis"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:paddingRight="5sp"
-                android:paddingLeft="5sp"
-                android:text="@string/nickjr"
-                android:textColor="@color/black"
-                android:textSize="15dp" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Director"
-                android:paddingRight="5sp"
-                android:paddingLeft="5sp"
-                android:textColor="@color/red"
-                android:textSize="20dp"
-                android:paddingTop="10sp"
-                android:textStyle="bold" />
+                    <TextView
+                        android:id="@+id/tvSinopsis"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Sinopsis"
+                        android:paddingRight="5sp"
+                        android:paddingLeft="5sp"
+                        android:textColor="@color/red"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="null"
-                android:paddingRight="5sp"
-                android:paddingLeft="5sp"/>
+                    <TextView
+                        android:id="@+id/tvDescripcionSinopsis"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:paddingLeft="5sp"
+                        android:paddingRight="5sp"
+                        android:text="@string/nickjr"
+                        android:textColor="@color/black"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="5sp"
+                        android:paddingTop="10sp"
+                        android:paddingRight="5sp"
+                        android:text="Director"
+                        android:textColor="@color/red"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="5sp"
+                        android:paddingRight="5sp"
+                        android:text="null" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="5sp"
+                        android:paddingTop="10sp"
+                        android:paddingRight="5sp"
+                        android:text="Idioma"
+                        android:textColor="@color/red"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="5sp"
+                        android:paddingRight="5sp"
+                        android:textColor="@color/black"
+                        android:text="DOBLADA" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="5sp"
+                        android:paddingTop="10sp"
+                        android:paddingRight="5sp"
+                        android:text="Disponible"
+                        android:textColor="@color/red"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="5sp"
+                        android:paddingRight="5sp"
+                        android:textColor="@color/black"
+                        android:text="REGULAR, 2D" />
+
+                </LinearLayout>
+
+            </ScrollView>
 
         </LinearLayout>
 

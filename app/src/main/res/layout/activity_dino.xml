@@ -1,28 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context=".DinoActivity"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    tools:context=".DinoActivity">
 
     <com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView
         android:id="@+id/youtube_player_view"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
 
-        app:videoId="R6mIrufS3vI"
-        app:autoPlay="false" />
+        app:autoPlay="false"
+        app:videoId="R6mIrufS3vI" />
 
     <TextView
         android:id="@+id/tvTituloPelicula"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:paddingLeft="5sp"
+        android:paddingRight="5sp"
         android:text="Dino King: Viaje a la Montaña de Fuego"
         android:textColor="@color/red"
-        android:paddingRight="5sp"
-        android:paddingLeft="5sp"
         android:textSize="22sp"
         android:textStyle="bold" />
 
@@ -30,10 +30,10 @@
         android:id="@+id/tvDuracion"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:paddingRight="5sp"
         android:paddingLeft="5sp"
-        android:textStyle="bold"
-        android:text="(R) Animación | 1 h 30 min | APT" />
+        android:paddingRight="5sp"
+        android:text="Animación | 1 h 30 min | APT"
+        android:textStyle="bold" />
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -43,54 +43,105 @@
         <ImageView
             android:layout_width="202dp"
             android:layout_height="328dp"
-            app:srcCompat="@drawable/img_dinoking"
-            android:paddingLeft="5sp"/>
+            android:paddingLeft="5sp"
+            app:srcCompat="@drawable/img_dinoking" />
 
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
-            <TextView
-                android:id="@+id/tvSinopsis"
+            <ScrollView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Sinopsis"
-                android:paddingTop="10sp"
-                android:paddingRight="5sp"
-                android:paddingLeft="5sp"
-                android:textColor="@color/red"
-                android:textSize="20dp"
-                android:textStyle="bold" />
+                android:layout_marginBottom="10dp"
+                android:paddingLeft="5dp"
+                android:paddingTop="15dp">
 
-            <TextView
-                android:id="@+id/tvDescripcionSinopsis"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:paddingRight="5sp"
-                android:paddingLeft="5sp"
-                android:text="@string/dinoking"
-                android:textColor="@color/black"
-                android:textSize="15dp" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Director"
-                android:paddingRight="5sp"
-                android:paddingLeft="5sp"
-                android:textColor="@color/red"
-                android:textSize="20dp"
-                android:paddingTop="10sp"
-                android:textStyle="bold" />
+                    <TextView
+                        android:id="@+id/tvSinopsis"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="5sp"
+                        android:paddingRight="5sp"
+                        android:text="Sinopsis"
+                        android:textColor="@color/red"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Han Sang-Ho"
-                android:textColor="@color/black"
-                android:paddingRight="5sp"
-                android:paddingLeft="5sp"/>
+                    <TextView
+                        android:id="@+id/tvDescripcionSinopsis"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:paddingLeft="5sp"
+                        android:paddingRight="5sp"
+                        android:text="@string/dinoking"
+                        android:textColor="@color/black"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="5sp"
+                        android:paddingTop="10sp"
+                        android:paddingRight="5sp"
+                        android:text="Director"
+                        android:textColor="@color/red"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="5sp"
+                        android:paddingRight="5sp"
+                        android:text="Han Sang-Ho"
+                        android:textColor="@color/black" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="5sp"
+                        android:paddingTop="10sp"
+                        android:paddingRight="5sp"
+                        android:text="Idioma"
+                        android:textColor="@color/red"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="5sp"
+                        android:paddingRight="5sp"
+                        android:text="DOBLADA"
+                        android:textColor="@color/black" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="5sp"
+                        android:paddingTop="10sp"
+                        android:paddingRight="5sp"
+                        android:text="Disponible"
+                        android:textColor="@color/red"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="5sp"
+                        android:paddingRight="5sp"
+                        android:text="REGULAR, 2D"
+                        android:textColor="@color/black" />
+                </LinearLayout>
+            </ScrollView>
 
         </LinearLayout>
 

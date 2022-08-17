@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    tools:context=".BestiaActivity">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".MinionsActivity"
+    android:orientation="vertical">
 
     <com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView
         android:id="@+id/youtube_player_view"
@@ -13,7 +13,7 @@
         android:layout_height="wrap_content"
 
         app:autoPlay="false"
-        app:videoId="xTANWIJcSIM" />
+        app:videoId="TiVtUwF22Xg" />
 
     <TextView
         android:id="@+id/tvTituloPelicula"
@@ -21,7 +21,7 @@
         android:layout_height="wrap_content"
         android:paddingLeft="5sp"
         android:paddingRight="5sp"
-        android:text="Bestia"
+        android:text="Minions: Nace un Villano"
         android:textColor="@color/red"
         android:textSize="22sp"
         android:textStyle="bold" />
@@ -32,7 +32,7 @@
         android:layout_height="wrap_content"
         android:paddingLeft="5sp"
         android:paddingRight="5sp"
-        android:text="Acción | 1 h 40 min | +14"
+        android:text="Animación | 1 h 30 min | APT"
         android:textStyle="bold" />
 
     <LinearLayout
@@ -44,7 +44,7 @@
             android:layout_width="202dp"
             android:layout_height="328dp"
             android:paddingLeft="5sp"
-            app:srcCompat="@drawable/img_bestia" />
+            android:src="@drawable/img_minion" />
 
         <LinearLayout
             android:layout_width="wrap_content"
@@ -80,44 +80,9 @@
                         android:layout_height="match_parent"
                         android:paddingLeft="5sp"
                         android:paddingRight="5sp"
-                        android:text="@string/bestia"
+                        android:text="@string/minions"
                         android:textColor="@color/black"
                         android:textSize="15dp" />
-
-                    <TextView
-                        android:id="@+id/tvIdioma"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:paddingLeft="5sp"
-                        android:paddingTop="10sp"
-                        android:paddingRight="5sp"
-                        android:text="Idioma"
-                        android:textColor="@color/red"
-                        android:textSize="20dp"
-                        android:textStyle="bold" />
-
-                    <LinearLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:orientation="horizontal">
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:paddingLeft="5sp"
-                            android:paddingRight="5sp"
-                            android:textColor="@color/black"
-                            android:text="SUBTITULADO" />
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:paddingLeft="5sp"
-                            android:paddingRight="5sp"
-                            android:textColor="@color/black"
-                            android:text="DOBLADO" />
-
-                    </LinearLayout>
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -135,7 +100,27 @@
                         android:layout_height="wrap_content"
                         android:paddingLeft="5sp"
                         android:paddingRight="5sp"
-                        android:text="null" />
+                        android:textColor="@color/black"
+                        android:text="Kyle Balda" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="5sp"
+                        android:paddingTop="10sp"
+                        android:paddingRight="5sp"
+                        android:text="Idioma"
+                        android:textColor="@color/red"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="5sp"
+                        android:paddingRight="5sp"
+                        android:textColor="@color/black"
+                        android:text="DOBLADA" />
 
                     <TextView
                         android:layout_width="wrap_content"

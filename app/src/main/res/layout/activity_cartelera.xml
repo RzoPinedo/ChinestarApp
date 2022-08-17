@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -18,7 +19,9 @@
 
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:paddingTop="80dp"
+        android:paddingBottom="70dp">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -111,7 +114,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="250dp"
                     android:layout_weight="2"
-
+                    android:onClick="startNickJr"
                     app:srcCompat="@drawable/img_festivalnickjr" />
             </LinearLayout>
 
@@ -125,7 +128,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="250dp"
                     android:layout_weight="2"
-
+                    android:onClick="startThorAmorYTrueno"
                     app:srcCompat="@drawable/img_thortrueno" />
 
                 <ImageView
@@ -133,75 +136,75 @@
                     android:layout_width="match_parent"
                     android:layout_height="250dp"
                     android:layout_weight="2"
-
+                    android:onClick="startMinions"
                     app:srcCompat="@drawable/img_minion" />
             </LinearLayout>
 
-            <LinearLayout
-                android:id="@+id/linearLayout"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="@color/white"
-                android:gravity="center_horizontal|center_vertical"
-                android:orientation="horizontal"
-                android:paddingBottom="0dp"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintLeft_toLeftOf="parent"
-                app:layout_constraintRight_toRightOf="parent">
-
-                <ImageView
-                    android:id="@+id/idInicio"
-                    android:layout_width="wrap_content"
-                    android:layout_height="30dp"
-                    android:layout_margin="20dp"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:srcCompat="@drawable/ic_dos" />
-
-                <ImageView
-                    android:id="@+id/idCines"
-                    android:layout_width="wrap_content"
-                    android:layout_height="30dp"
-                    android:layout_margin="20dp"
-                    android:onClick="irACines"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintStart_toEndOf="@+id/idInicio"
-                    app:srcCompat="@drawable/ic_baseline_location_on_24" />
-
-                <ImageView
-                    android:id="@+id/idConfiteria"
-                    android:layout_width="wrap_content"
-                    android:layout_height="30dp"
-                    android:layout_margin="20dp"
-                    android:onClick="irAConfiteria"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintStart_toEndOf="@+id/idCines"
-                    app:srcCompat="@drawable/ic_cinco" />
-
-                <ImageView
-                    android:id="@+id/idFormatos"
-                    android:layout_width="wrap_content"
-                    android:layout_height="30dp"
-                    android:layout_margin="20dp"
-                    android:onClick="irFormatos"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintStart_toEndOf="@+id/idConfiteria"
-                    app:srcCompat="@drawable/ic_uno" />
-
-                <ImageView
-                    android:id="@+id/idPromociones"
-                    android:layout_width="wrap_content"
-                    android:layout_height="30dp"
-                    android:layout_margin="20dp"
-                    android:onClick="irAPromociones"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintStart_toEndOf="@+id/idFormatos"
-                    app:srcCompat="@drawable/ic_tres" />
-
-            </LinearLayout>
-
         </LinearLayout>
+
     </ScrollView>
 
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:gravity="center_horizontal|center_vertical"
+        android:orientation="horizontal"
+        android:paddingBottom="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent">
 
-</LinearLayout>
+        <ImageView
+            android:id="@+id/idInicio"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_margin="20dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:srcCompat="@drawable/ic_dos" />
+
+        <ImageView
+            android:id="@+id/idCines"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_margin="20dp"
+            android:onClick="irACines"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/idInicio"
+            app:srcCompat="@drawable/ic_baseline_location_on_24" />
+
+        <ImageView
+            android:id="@+id/idConfiteria"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_margin="20dp"
+            android:onClick="irAConfiteria"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/idCines"
+            app:srcCompat="@drawable/ic_cinco" />
+
+        <ImageView
+            android:id="@+id/idFormatos"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_margin="20dp"
+            android:onClick="irFormatos"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/idConfiteria"
+            app:srcCompat="@drawable/ic_uno" />
+
+        <ImageView
+            android:id="@+id/idPromociones"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_margin="20dp"
+            android:onClick="irAPromociones"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/idFormatos"
+            app:srcCompat="@drawable/ic_tres" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

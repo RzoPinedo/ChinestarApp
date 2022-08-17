@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    tools:context=".BestiaActivity">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ThorActivity"
+    android:orientation="vertical">
 
     <com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView
         android:id="@+id/youtube_player_view"
@@ -13,7 +13,7 @@
         android:layout_height="wrap_content"
 
         app:autoPlay="false"
-        app:videoId="xTANWIJcSIM" />
+        app:videoId="_XjGUIiUUCk" />
 
     <TextView
         android:id="@+id/tvTituloPelicula"
@@ -21,7 +21,7 @@
         android:layout_height="wrap_content"
         android:paddingLeft="5sp"
         android:paddingRight="5sp"
-        android:text="Bestia"
+        android:text="Thor: Amor y Trueno"
         android:textColor="@color/red"
         android:textSize="22sp"
         android:textStyle="bold" />
@@ -32,7 +32,7 @@
         android:layout_height="wrap_content"
         android:paddingLeft="5sp"
         android:paddingRight="5sp"
-        android:text="Acción | 1 h 40 min | +14"
+        android:text="Acción | 2 h | +14"
         android:textStyle="bold" />
 
     <LinearLayout
@@ -44,7 +44,7 @@
             android:layout_width="202dp"
             android:layout_height="328dp"
             android:paddingLeft="5sp"
-            app:srcCompat="@drawable/img_bestia" />
+            app:srcCompat="@drawable/img_thortrueno" />
 
         <LinearLayout
             android:layout_width="wrap_content"
@@ -80,9 +80,27 @@
                         android:layout_height="match_parent"
                         android:paddingLeft="5sp"
                         android:paddingRight="5sp"
-                        android:text="@string/bestia"
+                        android:text="@string/thor"
                         android:textColor="@color/black"
                         android:textSize="15dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="5sp"
+                        android:paddingTop="10sp"
+                        android:paddingRight="5sp"
+                        android:text="Director"
+                        android:textColor="@color/red"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="5sp"
+                        android:paddingRight="5sp"
+                        android:text="null" />
 
                     <TextView
                         android:id="@+id/tvIdioma"
@@ -120,24 +138,7 @@
                     </LinearLayout>
 
                     <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:paddingLeft="5sp"
-                        android:paddingTop="10sp"
-                        android:paddingRight="5sp"
-                        android:text="Director"
-                        android:textColor="@color/red"
-                        android:textSize="20dp"
-                        android:textStyle="bold" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:paddingLeft="5sp"
-                        android:paddingRight="5sp"
-                        android:text="null" />
-
-                    <TextView
+                        android:id="@+id/tvdisponible"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:paddingLeft="5sp"
@@ -154,7 +155,7 @@
                         android:paddingLeft="5sp"
                         android:paddingRight="5sp"
                         android:textColor="@color/black"
-                        android:text="REGULAR, 2D, PRIME" />
+                        android:text="REGULAR, 3D, 2D, PRIME" />
 
                 </LinearLayout>
 

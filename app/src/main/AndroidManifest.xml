@@ -16,7 +16,13 @@
         android:windowSoftInputMode="adjustResize"
         tools:targetApi="31">
         <activity
-            android:name=".DetalleFormatoXD"
+            android:name=".MinionsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ThorActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Inicio.CarteleraActivity"
             android:exported="false" />
         <activity
             android:name=".NickjrActivity"
@@ -76,7 +82,7 @@
             android:name=".ViewCine.CinesActivity"
             android:exported="false" />
         <activity
-            android:name=".Inicio.CarteleraActivity"
+            android:name=".Inicio.IntroActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
