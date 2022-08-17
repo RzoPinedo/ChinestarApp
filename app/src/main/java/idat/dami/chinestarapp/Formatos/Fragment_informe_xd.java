@@ -12,6 +12,10 @@ import idat.dami.chinestarapp.R;
 
 public class Fragment_informe_xd extends Fragment {
 
+    public Fragment_informe_xd(){
+
+    }
+
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {

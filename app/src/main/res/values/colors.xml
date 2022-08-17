@@ -12,6 +12,8 @@
     <color name="yellow">#FFFF00</color>
     <color name="fondo">#FF98C1</color>
     <color name="azul">#3F51B5</color>
+    <color name="cielo">#0AADBC</color>
+    <color name="sombra_Red">#F37878</color>
 
     <!--?xml version="1.0" encoding="UTF-8"?-->
 

@@ -17,8 +17,8 @@ import idat.dami.chinestarapp.ViewPromociones.PromoActivity;
 
 public class DetalleFormatoXDActivity extends AppCompatActivity {
 
-    private Button btn_informes;
-    private Button btn_horarios;
+    private Button btn_informesXD;
+    private Button btn_horariosXD;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,38 +26,39 @@ public class DetalleFormatoXDActivity extends AppCompatActivity {
         setContentView(R.layout.activity_detalle_formato_xd);
         getSupportActionBar().hide();
 
-        btn_informes = findViewById(R.id.btnInforme_XD);
-        btn_horarios = findViewById(R.id.btnHorarios_XD);
+        btn_informesXD = findViewById(R.id.btnFormatoDetalleInformeXD);
+        btn_horariosXD = findViewById(R.id.btnFormatoDetalleHorarioXD);
 
-        btn_informes.setOnClickListener(new View.OnClickListener() {
+        btn_informesXD.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 FragmentManager fragmentManager = getSupportFragmentManager();
                 FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
 
-                Fragment_informe_xd fragment_informe_xd = new Fragment_informe_xd();
-                fragmentManager.clearBackStack(null);
+                Fragment_informe_xd frag_informeXD = new Fragment_informe_xd();
+                //fragmentManager.clearBackStack(null);
 
-                fragmentTransaction.add(R.id.contenedorXD, fragment_informe_xd);
+                fragmentTransaction.add(R.id.fragmentContentXD, frag_informeXD);
                 fragmentTransaction.addToBackStack(null);
                 fragmentTransaction.commit();
             }
         });
 
-        btn_horarios.setOnClickListener(new View.OnClickListener() {
+        btn_horariosXD.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 FragmentManager fragmentManager = getSupportFragmentManager();
                 FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
 
-                Fragmento_horarioXD fragmento_horarioXD = new Fragmento_horarioXD();
-                fragmentManager.clearBackStack(null);
+                Fragmento_horarioXD frag_horarioXD = new Fragmento_horarioXD();
+                //fragmentManager.clearBackStack(null);
 
-                fragmentTransaction.add(R.id.contenedorXD, fragmento_horarioXD);
+                fragmentTransaction.add(R.id.fragmentContentXD, frag_horarioXD);
                 fragmentTransaction.addToBackStack(null);
                 fragmentTransaction.commit();
             }
         });
+
     }
 
     //método para enlazar a otros activity

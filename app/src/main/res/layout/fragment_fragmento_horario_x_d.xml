@@ -6,21 +6,16 @@
     android:layout_height="match_parent"
     tools:context=".Formatos.Fragmento_horarioXD">
 
-    <!-- TODO: Update blank fragment layout -->
-
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-
-        >
-
+        android:layout_height="match_parent">
 
         <ImageView
             android:id="@+id/imageView6"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:src="@drawable/imagen_fondo"
             android:scaleType="centerCrop"
+            android:src="@drawable/imagen_fondo"
             tools:layout_editor_absoluteX="0dp"
             tools:layout_editor_absoluteY="16dp" />
 

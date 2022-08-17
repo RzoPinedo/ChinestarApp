@@ -6,8 +6,6 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
-import java.text.Format;
-
 import idat.dami.chinestarapp.Inicio.CarteleraActivity;
 import idat.dami.chinestarapp.R;
 import idat.dami.chinestarapp.ViewPromociones.PromoActivity;
@@ -56,7 +54,7 @@ public class FormatosActivity extends AppCompatActivity {
     }
 
     public void irAFormatoDBOX(View view) {
-        Intent objInicio = new Intent(this, Dea.class);
+        Intent objInicio = new Intent(this, DetalleFormatoDBoxActivity.class);
         startActivity(objInicio);
     }
 
