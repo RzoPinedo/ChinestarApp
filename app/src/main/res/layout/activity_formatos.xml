@@ -12,10 +12,10 @@
         android:id="@+id/header"
         android:layout_width="match_parent"
         android:layout_height="80dp"
+        android:layout_marginBottom="10dp"
         android:adjustViewBounds="true"
         android:scaleType="centerCrop"
-        app:srcCompat="@drawable/header2_usuario_"
-        android:layout_marginBottom="10dp"/>
+        app:srcCompat="@drawable/header2_usuario_" />
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -25,20 +25,20 @@
         app:layout_constraintTop_toBottomOf="@+id/header">
 
         <ImageView
-            android:id="@+id/imagenDbox"
+            android:id="@+id/btnformatodbox"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:onClick="irDetalleFormato"
-            app:srcCompat="@drawable/foto_2__3d_"
-            android:layout_marginTop="30dp"/>
+            android:layout_marginTop="30dp"
+            android:onClick="irAFormatoDBOX"
+            app:srcCompat="@drawable/foto_2__3d_" />
 
         <ImageView
-            android:id="@+id/imageView3"
+            android:id="@+id/btnformatoxd"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:onClick="irDetalleFormato"
-            app:srcCompat="@drawable/salaxdxd"
-            android:layout_marginTop="30dp"/>
+            android:layout_marginTop="30dp"
+            android:onClick="irAFormatoXD"
+            app:srcCompat="@drawable/salaxdxd" />
 
     </LinearLayout>
 
@@ -89,6 +89,7 @@
             android:layout_width="wrap_content"
             android:layout_height="30dp"
             android:layout_margin="20dp"
+            android:onClick="irAFormatos"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toEndOf="@+id/idConfiteria"
             app:srcCompat="@drawable/ic_uno" />

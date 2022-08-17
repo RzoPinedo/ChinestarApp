@@ -6,6 +6,8 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
+import java.text.Format;
+
 import idat.dami.chinestarapp.Inicio.CarteleraActivity;
 import idat.dami.chinestarapp.R;
 import idat.dami.chinestarapp.ViewPromociones.PromoActivity;
@@ -37,14 +39,24 @@ public class FormatosActivity extends AppCompatActivity {
         startActivity(objInicio);
     }
 
+    public void irAFormatos(View view) {
+        Intent objInicio = new Intent(this, FormatosActivity.class);
+        startActivity(objInicio);
+    }
+
     public void irAPromociones(View view) {
         Intent objInicio = new Intent(this, PromoActivity.class);
         startActivity(objInicio);
     }
 
     //saltar al Activiti Formatos
-    public void irDetalleFormato(View view) {
-        Intent objInicio = new Intent(this, DetalleFormatoActivity.class);
+    public void irAFormatoXD(View view) {
+        Intent objInicio = new Intent(this, DetalleFormatoXDActivity.class);
+        startActivity(objInicio);
+    }
+
+    public void irAFormatoDBOX(View view) {
+        Intent objInicio = new Intent(this, Dea.class);
         startActivity(objInicio);
     }
 

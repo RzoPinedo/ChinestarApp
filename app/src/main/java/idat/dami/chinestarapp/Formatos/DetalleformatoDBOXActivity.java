@@ -7,52 +7,52 @@ import androidx.fragment.app.FragmentTransaction;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.ImageView;
-import android.widget.TextView;
+import android.widget.Button;
 
 import idat.dami.chinestarapp.Inicio.CarteleraActivity;
 import idat.dami.chinestarapp.R;
+import idat.dami.chinestarapp.ViewCine.CinesActivity;
 import idat.dami.chinestarapp.ViewConfiteria.ConfiteriaActivity;
 import idat.dami.chinestarapp.ViewPromociones.PromoActivity;
 
-public class DetalleFormatoActivity extends AppCompatActivity {
+public class DetalleformatoDBOXActivity extends AppCompatActivity {
 
-    private TextView btn_informes;
-    private TextView btn_horarios;
+    private Button btnHorariosDBOX;
+    private Button btnInformeDBOX;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_detalle_formato);
-        getSupportActionBar().hide();
 
-        btn_informes = findViewById(R.id.btnInforme);
-        btn_horarios = findViewById(R.id.btnHorarios);
+        btnHorariosDBOX = findViewById(R.id.btnHorariosDBOX);
+        btnInformeDBOX = findViewById(R.id.btnInformeDBOX);
 
-        btn_informes.setOnClickListener(new View.OnClickListener() {
+        btnHorariosDBOX.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 FragmentManager fragmentManager = getSupportFragmentManager();
                 FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
 
-                Formatos fragmentFormatos = new Formatos();
+                Fragmento_horarioDBOX fragmento_horarioDBOX = new Fragmento_horarioDBOX();
                 fragmentManager.clearBackStack(null);
 
-                fragmentTransaction.add(R.id.fragmentContentFormatos, fragmentFormatos);
+                fragmentTransaction.add(R.id.contenedorDBOX, fragmento_horarioDBOX);
                 fragmentTransaction.addToBackStack(null);
                 fragmentTransaction.commit();
             }
         });
 
-        btn_horarios.setOnClickListener(new View.OnClickListener() {
+        btnInformeDBOX.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 FragmentManager fragmentManager = getSupportFragmentManager();
                 FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
 
-                Fragmento_horarioDBOX fragmentHorarioDBOX = new Fragmento_horarioDBOX();
+                Fragment_informe_dbox fragment_informe_dbox = new Fragment_informe_dbox();
                 fragmentManager.clearBackStack(null);
-                fragmentTransaction.add(R.id.fragmentContentFormatos, fragmentHorarioDBOX);
+
+                fragmentTransaction.add(R.id.contenedorDBOX, fragment_informe_dbox);
                 fragmentTransaction.addToBackStack(null);
                 fragmentTransaction.commit();
             }
@@ -70,7 +70,12 @@ public class DetalleFormatoActivity extends AppCompatActivity {
         startActivity(objInicio);
     }
 
-    public void irFormatos(View view) {
+    public void irACines(View view) {
+        Intent objInicio = new Intent(this, CinesActivity.class);
+        startActivity(objInicio);
+    }
+
+    public void irAFormatos(View view) {
         Intent objInicio = new Intent(this, FormatosActivity.class);
         startActivity(objInicio);
     }
