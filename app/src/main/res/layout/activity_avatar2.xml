@@ -129,6 +129,7 @@
                             android:paddingLeft="5sp"
                             android:paddingRight="5sp"
                             android:textColor="@color/black"
+                            android:background="@drawable/bordes_redondeados"
                             android:text="SUBTITULADO" />
 
                         <TextView
