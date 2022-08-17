@@ -16,6 +16,9 @@
         android:windowSoftInputMode="adjustResize"
         tools:targetApi="31">
         <activity
+            android:name=".DetalleFormatoXD"
+            android:exported="false" />
+        <activity
             android:name=".NickjrActivity"
             android:exported="false" />
         <activity

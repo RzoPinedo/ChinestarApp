@@ -12,26 +12,12 @@
         android:layout_height="match_parent"
         android:orientation="vertical">
 
-        <Button
-            android:id="@+id/button3"
+        <ImageView
+            android:id="@+id/imageView19"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Button" />
-
-        <LinearLayout
-
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="horizontal"
-            android:layout_marginTop="10dp">
-
-            <ImageView
-                android:id="@+id/imageView19"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                app:srcCompat="@drawable/sala_xd"
-                android:scaleType="fitXY"/>
-        </LinearLayout>
+            android:scaleType="fitXY"
+            app:srcCompat="@drawable/sala_xd" />
 
     </LinearLayout>
 
