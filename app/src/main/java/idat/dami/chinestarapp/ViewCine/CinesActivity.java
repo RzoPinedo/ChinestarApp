@@ -3,19 +3,11 @@ package idat.dami.chinestarapp.ViewCine;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
-import androidx.recyclerview.widget.LinearLayoutManager;
-import androidx.recyclerview.widget.RecyclerView;
 
-import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
-import java.util.ArrayList;
-import java.util.List;
-
-import android.widget.ArrayAdapter;
-import android.widget.Spinner;
 import android.widget.TextView;
 
 
@@ -24,16 +16,14 @@ import idat.dami.chinestarapp.Inicio.CarteleraActivity;
 import idat.dami.chinestarapp.ViewComentarios.ComentariosActivity;
 import idat.dami.chinestarapp.R;
 import idat.dami.chinestarapp.ViewConfiteria.ConfiteriaActivity;
-import idat.dami.chinestarapp.ViewPromociones.FragmentEntradas;
-import idat.dami.chinestarapp.model.Cine;
 
-public class CinesActivity extends AppCompatActivity {
+public class CinesActivity extends AppCompatActivity{
 
 
-    private TextView tvProvCineLima;
-    private TextView tvProvCineArequipa;
-    private TextView tvProvCineLibertad;
-    private TextView tvProvCinePiura;
+    private TextView zonaLima;
+    private TextView zonaSur;
+    private TextView zonaCentro;
+    private TextView zonaNorte;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -41,67 +31,72 @@ public class CinesActivity extends AppCompatActivity {
         setContentView(R.layout.activity_cines);
         getSupportActionBar().hide();
 
-        tvProvCineLima = (TextView) findViewById(R.id.tvProvCineLima);
-        tvProvCineArequipa = (TextView) findViewById(R.id.tvProvCineArequipa);
-        tvProvCineLibertad = (TextView) findViewById(R.id.tvProvCineLibertad);
-        tvProvCinePiura = (TextView) findViewById(R.id.tvProvCinePiura);
 
-        tvProvCineLima.setOnClickListener(new View.OnClickListener() {
+        zonaLima = (TextView) findViewById(R.id.btnZonaLima);
+        zonaSur = (TextView) findViewById(R.id.btnZonaSur);
+        zonaNorte = (TextView) findViewById(R.id.btnZonaNorte);
+        zonaCentro = (TextView) findViewById(R.id.btnZonaCentro);
+
+
+        zonaLima.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 FragmentManager fragmentManager = getSupportFragmentManager();
                 FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
-                CinesLima fragmentLima = new CinesLima();
+                FragmentZonaLima fragmentZonaLima = new FragmentZonaLima();
 
-                fragmentTransaction.add(R.id.fragmentCines, fragmentLima);
+                fragmentTransaction.add(R.id.fragmentCines, fragmentZonaLima);
+                //fragmentManager.popBackStackImmediate(null, FragmentManager.POP_BACK_STACK_INCLUSIVE);
+                fragmentTransaction.addToBackStack(null);
+                fragmentTransaction.commit();
+            }
+
+        });
+
+        zonaSur.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                FragmentManager fragmentManager = getSupportFragmentManager();
+                FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
+                FragmentZonaSur fragmentZonaSur = new FragmentZonaSur();
+
+                fragmentTransaction.add(R.id.fragmentCines, fragmentZonaSur);
                 //fragmentManager.popBackStackImmediate(null, FragmentManager.POP_BACK_STACK_INCLUSIVE);
                 fragmentTransaction.addToBackStack(null);
                 fragmentTransaction.commit();
             }
         });
 
-        tvProvCineArequipa.setOnClickListener(new View.OnClickListener() {
+        zonaNorte.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 FragmentManager fragmentManager = getSupportFragmentManager();
                 FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
-                CinesArequipa fragmentArequipa = new CinesArequipa();
+                FragmentZonaNorte fragmentZonaNorte = new FragmentZonaNorte();
 
-                fragmentTransaction.add(R.id.fragmentCines, fragmentArequipa);
+
+                fragmentTransaction.add(R.id.fragmentCines, fragmentZonaNorte);
                 //fragmentManager.popBackStackImmediate(null, FragmentManager.POP_BACK_STACK_INCLUSIVE);
                 fragmentTransaction.addToBackStack(null);
                 fragmentTransaction.commit();
             }
         });
 
-        tvProvCineLibertad.setOnClickListener(new View.OnClickListener() {
+        zonaCentro.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 FragmentManager fragmentManager = getSupportFragmentManager();
                 FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
-                CinesLibertad fragmentLibertad = new CinesLibertad();
+                FragmentZonaCentro fragmentZonaCentro = new FragmentZonaCentro();
 
-
-                fragmentTransaction.add(R.id.fragmentCines, fragmentLibertad);
+                fragmentTransaction.add(R.id.fragmentCines, fragmentZonaCentro);
                 //fragmentManager.popBackStackImmediate(null, FragmentManager.POP_BACK_STACK_INCLUSIVE);
                 fragmentTransaction.addToBackStack(null);
                 fragmentTransaction.commit();
             }
         });
 
-        tvProvCinePiura.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                FragmentManager fragmentManager = getSupportFragmentManager();
-                FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
-                CinesPiura fragmentPiura = new CinesPiura();
 
-                fragmentTransaction.add(R.id.fragmentCines, fragmentPiura);
-                //fragmentManager.popBackStackImmediate(null, FragmentManager.POP_BACK_STACK_INCLUSIVE);
-                fragmentTransaction.addToBackStack(null);
-                fragmentTransaction.commit();
-            }
-        });
 
     }
 

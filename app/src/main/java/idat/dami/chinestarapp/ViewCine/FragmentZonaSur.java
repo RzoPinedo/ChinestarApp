@@ -16,16 +16,16 @@ import idat.dami.chinestarapp.R;
 import idat.dami.chinestarapp.model.Cine;
 
 
-public class CinesLibertad extends Fragment {
-RecyclerView recyclerVCinesLibertad;
-ArrayList<Cine> listaCines;
+public class FragmentZonaSur extends Fragment {
+    RecyclerView recyclerVCinesArequipa;
+    ArrayList<Cine> listaCines;
 
-    public CinesLibertad() {
+    public FragmentZonaSur() {
         // Required empty public constructor
     }
 
-    public static CinesLibertad newInstance(String param1, String param2) {
-        CinesLibertad fragment = new CinesLibertad();
+    public static FragmentZonaSur newInstance(String param1, String param2) {
+        FragmentZonaSur fragment = new FragmentZonaSur();
         Bundle args = new Bundle();
         fragment.setArguments(args);
         return fragment;
@@ -40,26 +40,26 @@ ArrayList<Cine> listaCines;
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        View vista = inflater.inflate(R.layout.fragment_cines_libertad, container, false);
+        View vista = inflater.inflate(R.layout.fragment_zona_sur, container, false);
 
         listaCines = new ArrayList<>();
-        recyclerVCinesLibertad = vista.findViewById(R.id.recyclerVLibertad);
-        recyclerVCinesLibertad.setLayoutManager(new LinearLayoutManager(getContext()));
+        recyclerVCinesArequipa = vista.findViewById(R.id.recyclerVArequipa);
+        recyclerVCinesArequipa.setLayoutManager(new LinearLayoutManager(getContext()));
 
         llenarCines();
 
         CustomAdapter adapter = new CustomAdapter(listaCines);
-        recyclerVCinesLibertad.setAdapter(adapter);
-
+        recyclerVCinesArequipa.setAdapter(adapter);
 
         return vista;
     }
 
     public void llenarCines(){
-        listaCines.add(new Cine("Cine Cajamarca", "Av. Angamos 232 int 24, Kun Aguero", "(01) 763 8972", R.drawable.c_1));
-        listaCines.add(new Cine("Cine Trujillo", "Av Aviación 2293", "(01) 433 9874", R.drawable.c_2));
-        listaCines.add(new Cine("Cine Chota", "Av. Guardia Civil 1123 CC. Real Plaza", "(01) 897 6633", R.drawable.c_3));
-        listaCines.add(new Cine("Cine Eterna Primavera", "Jiron la Unión 3233-3308", "(01) 123 7884", R.drawable.cc_4));
+        listaCines.add(new Cine("Cine Plaza Blanca", "Av. Angamos 232 int 24, Kun Aguero", "(01) 763 8972", R.drawable.c_1));
+        listaCines.add(new Cine("Cine Mall MistiPlaza", "Av Aviación 2293", "(01) 433 9874", R.drawable.c_2));
+        listaCines.add(new Cine("Cine San Vicente Star", "Av. Guardia Civil 1123 CC. Real Plaza", "(01) 897 6633", R.drawable.c_3));
+        listaCines.add(new Cine("Cine Arequipa Star", "Jiron la Unión 3233-3308", "(01) 123 7884", R.drawable.cc_4));
 
     }
+
 }

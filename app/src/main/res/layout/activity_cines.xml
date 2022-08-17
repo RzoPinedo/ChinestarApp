@@ -32,41 +32,45 @@
 
 
             <TextView
-                android:id="@+id/tvProvCineLima"
+                android:id="@+id/btnZonaLima"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="@string/provLima"
+                android:text="@string/zonaLima"
+                android:textAlignment="center"
                 android:textColor="@color/red"
                 android:textSize="18sp"
                 android:textStyle="bold" />
 
             <TextView
-                android:id="@+id/tvProvCineArequipa"
+                android:id="@+id/btnZonaSur"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="@string/provArequipa"
+                android:text="@string/zonaSur"
+                android:textAlignment="center"
                 android:textColor="@color/red"
                 android:textSize="18sp"
                 android:textStyle="bold" />
 
             <TextView
-                android:id="@+id/tvProvCineLibertad"
+                android:id="@+id/btnZonaCentro"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="@string/provLibertad"
+                android:text="@string/zonaCentro"
+                android:textAlignment="center"
                 android:textColor="@color/red"
                 android:textSize="18sp"
                 android:textStyle="bold" />
 
             <TextView
-                android:id="@+id/tvProvCinePiura"
+                android:id="@+id/btnZonaNorte"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="@string/provPiura"
+                android:text="@string/zonaNorte"
+                android:textAlignment="center"
                 android:textColor="@color/red"
                 android:textSize="18sp"
                 android:textStyle="bold" />
@@ -75,7 +79,7 @@
 
         <androidx.fragment.app.FragmentContainerView
             android:id="@+id/fragmentCines"
-            android:name="idat.dami.chinestarapp.ViewCine.CinesLima"
+            android:name="idat.dami.chinestarapp.ViewCine.FragmentZonaLima"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="1" />

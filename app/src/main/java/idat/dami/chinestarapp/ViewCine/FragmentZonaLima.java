@@ -17,20 +17,20 @@ import idat.dami.chinestarapp.model.Cine;
 
 /**
  * A simple {@link Fragment} subclass.
- * Use the {@link CinesLima#newInstance} factory method to
+ * Use the {@link FragmentZonaLima#newInstance} factory method to
  * create an instance of this fragment.
  */
-public class CinesLima extends Fragment {
+public class FragmentZonaLima extends Fragment {
 
     RecyclerView recyclerVCinesLima;
     ArrayList<Cine> listaCines;
 
-    public CinesLima() {
+    public FragmentZonaLima() {
         // Required empty public constructor
     }
 
-    public static CinesLima newInstance(String param1, String param2) {
-        CinesLima fragment = new CinesLima();
+    public static FragmentZonaLima newInstance(String param1, String param2) {
+        FragmentZonaLima fragment = new FragmentZonaLima();
         Bundle args = new Bundle();
         fragment.setArguments(args);
         return fragment;
@@ -45,7 +45,7 @@ public class CinesLima extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        View vista = inflater.inflate(R.layout.fragment_cines_lima, container, false);
+        View vista = inflater.inflate(R.layout.fragment_zona_lima, container, false);
 
         listaCines = new ArrayList<>();
         recyclerVCinesLima = vista.findViewById(R.id.recyclerVLima);

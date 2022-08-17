@@ -3,6 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
+    android:background="@color/white"
     android:orientation="vertical">
 
 
@@ -10,13 +11,12 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_marginLeft="5dp"
-        android:layout_marginTop="5dp"
-        android:layout_marginRight="5dp"
-        android:layout_marginBottom="10dp">
+        android:layout_marginRight="5dp">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="110dp"
+            android:backgroundTint="@color/white"
             android:orientation="horizontal">
 
             <ImageView
@@ -25,6 +25,8 @@
                 android:layout_height="100dp"
                 android:layout_margin="5dp"
                 android:layout_weight="1"
+                android:adjustViewBounds="false"
+                android:scaleType="centerCrop"
                 app:srcCompat="@drawable/c_1" />
 
             <LinearLayout
@@ -39,8 +41,8 @@
                     android:id="@+id/tvCine"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:paddingBottom="0dp"
                     android:layout_marginTop="5dp"
+                    android:paddingBottom="0dp"
                     android:text="TextView"
                     android:textSize="20sp" />
 
@@ -49,17 +51,17 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="3dp"
-                    android:textSize="18sp"
-                    android:text="TextView" />
+                    android:text="TextView"
+                    android:textSize="18sp" />
 
                 <TextView
                     android:id="@+id/tvTelefono"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="TextView"
                     android:layout_marginTop="10dp"
-                    android:textSize="18sp"
-                    android:textColor="@color/red"/>
+                    android:text="TextView"
+                    android:textColor="@color/red"
+                    android:textSize="18sp" />
             </LinearLayout>
         </LinearLayout>
     </androidx.cardview.widget.CardView>

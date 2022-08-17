@@ -3,10 +3,11 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ViewCine.CinesLima">
+    android:backgroundTint="@color/white"
+    tools:context=".ViewCine.FragmentZonaCentro">
 
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/recyclerVLima"
+        android:id="@+id/recyclerVZonaCentro"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
 </FrameLayout>

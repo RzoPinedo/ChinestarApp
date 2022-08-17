@@ -64,9 +64,6 @@
             android:name=".ViewConfiteria.DetailActivityConfiteria"
             android:exported="false" />
         <activity
-            android:name=".ViewCine.DetailActivityCine"
-            android:exported="false" />
-        <activity
             android:name=".RegistroActivity"
             android:exported="false" />
         <activity
