@@ -58,7 +58,7 @@
             android:name=".ViewComentarios.ComentariosActivity"
             android:exported="false" />
         <activity
-            android:name=".Formatos.DetalleFormatoActivity"
+            android:name=".Formatos.DetalleFormatoXDActivity"
             android:exported="false" />
         <activity
             android:name=".ViewConfiteria.DetailActivityConfiteria"

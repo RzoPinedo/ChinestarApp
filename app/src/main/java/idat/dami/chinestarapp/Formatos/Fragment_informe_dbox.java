@@ -10,21 +10,13 @@ import android.view.ViewGroup;
 
 import idat.dami.chinestarapp.R;
 
-/**
- * A simple {@link Fragment} subclass.
- * Use the {@link Formatos#} factory method to
- * create an instance of this fragment.
- */
-public class Formatos extends Fragment {
+public class Fragment_informe_dbox extends Fragment {
 
-    public Formatos() {
-        // Required empty public constructor
-    }
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_formatos, container, false);
+        return inflater.inflate(R.layout.fragment_informedbox, container, false);
     }
 }
