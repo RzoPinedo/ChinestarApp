@@ -8,37 +8,31 @@
     tools:context=".Inicio.CarteleraActivity">
 
     <LinearLayout
+        android:id="@+id/user"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-<<<<<<< HEAD
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        android:elevation="8dp">
 
         <ImageView
             android:id="@+id/header"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="370dp"
+            android:layout_height="65dp"
             android:adjustViewBounds="true"
             android:scaleType="centerCrop"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:srcCompat="@drawable/header2_usuario_" />
+            app:srcCompat="@drawable/header_sin_usuario" />
 
         <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@drawable/ic_user"/>
-
+            android:layout_width="41dp"
+            android:layout_height="65dp"
+            android:onClick="irALogin"
+            android:src="@drawable/ic_user_outline"
+            android:background="@color/user"/>
 
     </LinearLayout>
-=======
-        android:adjustViewBounds="true"
-        android:scaleType="centerCrop"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/header_sin_usuario" />
->>>>>>> 63d53cc57405328a3cb57b8fbcd1f6c5cbc48f9f
 
     <ScrollView
         android:id="@+id/scrollView2"
