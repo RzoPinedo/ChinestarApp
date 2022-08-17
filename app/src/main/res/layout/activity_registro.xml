@@ -8,11 +8,11 @@
     android:orientation="vertical"
     tools:showIn="@layout/activity_registro">
 
-    <ScrollView
+    <!--<ScrollView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center_vertical"
-        android:fillViewport="true">
+        android:fillViewport="true">-->
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -43,7 +43,7 @@
                     android:textSize="25dp" />
 
 
-                <com.google.android.material.textfield.TextInputLayout
+                <!--<com.google.android.material.textfield.TextInputLayout
                     android:id="@+id/edNombres"
                     style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
                     android:layout_width="match_parent"
@@ -58,9 +58,9 @@
                         android:inputType="textPersonName"
                         android:typeface="sans" />
 
-                </com.google.android.material.textfield.TextInputLayout>
+                </com.google.android.material.textfield.TextInputLayout>-->
 
-                <com.google.android.material.textfield.TextInputLayout
+                <!--<com.google.android.material.textfield.TextInputLayout
                     android:id="@+id/edApellidos"
                     style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
                     android:layout_width="match_parent"
@@ -75,7 +75,7 @@
                         android:inputType="textPersonName"
                         android:typeface="sans" />
 
-                </com.google.android.material.textfield.TextInputLayout>
+                </com.google.android.material.textfield.TextInputLayout>-->
 
                 <com.google.android.material.textfield.TextInputLayout
                     android:id="@+id/edEmailRegistro"
@@ -111,7 +111,7 @@
 
                 </com.google.android.material.textfield.TextInputLayout>
 
-                <com.google.android.material.textfield.TextInputLayout
+                <!--<com.google.android.material.textfield.TextInputLayout
                     android:id="@+id/edConfirmPassword"
                     style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
                     android:layout_width="match_parent"
@@ -127,9 +127,9 @@
                         android:inputType="textPassword"
                         android:typeface="sans" />
 
-                </com.google.android.material.textfield.TextInputLayout>
+                </com.google.android.material.textfield.TextInputLayout>-->
 
-                <com.google.android.material.textfield.TextInputLayout
+                <!--<com.google.android.material.textfield.TextInputLayout
                     android:id="@+id/edFechaNacimiento"
                     style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
                     android:layout_width="match_parent"
@@ -144,9 +144,9 @@
                         android:inputType="date"
                         android:typeface="sans" />
 
-                </com.google.android.material.textfield.TextInputLayout>
+                </com.google.android.material.textfield.TextInputLayout>-->
 
-                <androidx.constraintlayout.utils.widget.MotionLabel
+                <!--<androidx.constraintlayout.utils.widget.MotionLabel
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10dp"
@@ -173,12 +173,12 @@
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:text="@string/femenino" />
-                </RadioGroup>
+                </RadioGroup>-->
 
 
             </LinearLayout>
 
-            <LinearLayout
+            <!--<LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="5dp"
@@ -190,12 +190,12 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_vertical|center_horizontal"
                     android:text="@string/btn_ingresar" />
-                <!-- android:onClick="" -->
+                &lt;!&ndash; android:onClick="" &ndash;&gt;
 
-            </LinearLayout>
+            </LinearLayout>-->
 
 
         </LinearLayout>
-    </ScrollView>
+    <!--</ScrollView>-->
 
 </LinearLayout>
