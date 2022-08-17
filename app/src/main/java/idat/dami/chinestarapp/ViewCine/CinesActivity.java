@@ -53,8 +53,6 @@ public class CinesActivity extends AppCompatActivity {
                 FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
                 CinesLima fragmentLima = new CinesLima();
 
-
-                fragmentManager.popBackStack();
                 fragmentTransaction.add(R.id.fragmentCines, fragmentLima);
                 //fragmentManager.popBackStackImmediate(null, FragmentManager.POP_BACK_STACK_INCLUSIVE);
                 fragmentTransaction.addToBackStack(null);
@@ -69,7 +67,6 @@ public class CinesActivity extends AppCompatActivity {
                 FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
                 CinesArequipa fragmentArequipa = new CinesArequipa();
 
-                fragmentManager.popBackStack();
                 fragmentTransaction.add(R.id.fragmentCines, fragmentArequipa);
                 //fragmentManager.popBackStackImmediate(null, FragmentManager.POP_BACK_STACK_INCLUSIVE);
                 fragmentTransaction.addToBackStack(null);
@@ -84,7 +81,7 @@ public class CinesActivity extends AppCompatActivity {
                 FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
                 CinesLibertad fragmentLibertad = new CinesLibertad();
 
-                fragmentManager.popBackStack();
+
                 fragmentTransaction.add(R.id.fragmentCines, fragmentLibertad);
                 //fragmentManager.popBackStackImmediate(null, FragmentManager.POP_BACK_STACK_INCLUSIVE);
                 fragmentTransaction.addToBackStack(null);
@@ -99,7 +96,6 @@ public class CinesActivity extends AppCompatActivity {
                 FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
                 CinesPiura fragmentPiura = new CinesPiura();
 
-                fragmentManager.popBackStack();
                 fragmentTransaction.add(R.id.fragmentCines, fragmentPiura);
                 //fragmentManager.popBackStackImmediate(null, FragmentManager.POP_BACK_STACK_INCLUSIVE);
                 fragmentTransaction.addToBackStack(null);
@@ -107,24 +103,6 @@ public class CinesActivity extends AppCompatActivity {
             }
         });
 
-    }
-
-    public static void clearFragmentByTag(Context context, String tag) {
-        try {
-            FragmentManager fm = ((AppCompatActivity) context).getSupportFragmentManager();
-
-            for (int i = fm.getBackStackEntryCount() - 1; i >= 0; i--) {
-                String backEntry = fm.getBackStackEntryAt(i).getName();
-                if (backEntry.equals(tag)) {
-                    break;
-                } else {
-                    fm.popBackStack();
-                }
-            }
-        } catch (Exception e) {
-            System.out.print("!====Popbackstack error : " + e);
-            e.printStackTrace();
-        }
     }
 
     //método para enlazar a otros activity
