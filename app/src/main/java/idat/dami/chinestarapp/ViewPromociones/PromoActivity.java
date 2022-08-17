@@ -34,7 +34,7 @@ public class PromoActivity extends AppCompatActivity {
             public void onClick(View v) {
                 FragmentManager fragmentManager = getSupportFragmentManager();
                 FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
-                FragmentEntradas entradasFragment = new FragmentEntradas();
+                FragmentPromoEntradas entradasFragment = new FragmentPromoEntradas();
 
                 fragmentTransaction.add(R.id.fragmentContentPromos, entradasFragment);
                 fragmentTransaction.addToBackStack(null);
@@ -47,7 +47,7 @@ public class PromoActivity extends AppCompatActivity {
             public void onClick(View v) {
                 FragmentManager fragmentManager = getSupportFragmentManager();
                 FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
-                FragmentFiestasPatrias fiestasFragment = new FragmentFiestasPatrias();
+                FragmentPromoBancos fiestasFragment = new FragmentPromoBancos();
 
                 fragmentTransaction.add(R.id.fragmentContentPromos, fiestasFragment);
                 fragmentTransaction.addToBackStack(null);
