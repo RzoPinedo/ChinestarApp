@@ -10,6 +10,7 @@
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+<<<<<<< HEAD
         android:orientation="horizontal">
 
         <ImageView
@@ -30,6 +31,14 @@
 
 
     </LinearLayout>
+=======
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/header_sin_usuario" />
+>>>>>>> 63d53cc57405328a3cb57b8fbcd1f6c5cbc48f9f
 
     <ScrollView
         android:id="@+id/scrollView2"
