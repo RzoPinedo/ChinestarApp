@@ -140,7 +140,7 @@
                             app:srcCompat="@drawable/ic_intagram" />
 
                         <ImageView
-                            android:id="@+id/btnWhatsApp"
+                            android:id="@+id/btnTwitter"
                             android:layout_width="48dp"
                             android:layout_height="48dp"
                             android:layout_margin="10dp"
