@@ -37,14 +37,24 @@ public class FormatosActivity extends AppCompatActivity {
         startActivity(objInicio);
     }
 
+    public void irAFormatos(View view) {
+        Intent objInicio = new Intent(this, FormatosActivity.class);
+        startActivity(objInicio);
+    }
+
     public void irAPromociones(View view) {
         Intent objInicio = new Intent(this, PromoActivity.class);
         startActivity(objInicio);
     }
 
     //saltar al Activiti Formatos
-    public void irDetalleFormato(View view) {
-        Intent objInicio = new Intent(this, DetalleFormatoActivity.class);
+    public void irAFormatoXD(View view) {
+        Intent objInicio = new Intent(this, DetalleFormatoXDActivity.class);
+        startActivity(objInicio);
+    }
+
+    public void irAFormatoDBOX(View view) {
+        Intent objInicio = new Intent(this, DetalleFormatoDBoxActivity.class);
         startActivity(objInicio);
     }
 

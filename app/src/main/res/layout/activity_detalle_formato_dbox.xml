@@ -1,73 +1,63 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
-
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    tools:context=".Formatos.DetalleFormatoDBoxActivity">
 
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical"
-        tools:layout_editor_absoluteY="10dp">
+        android:orientation="vertical">
 
-        <ImageButton
-            android:id="@+id/imageButton"
+        <ImageView
+            android:id="@+id/imgFormatoDetalleDBOX"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:scaleType="fitXY"
-            app:srcCompat="@drawable/f_2" />
+            android:layout_height="230dp"
+            android:adjustViewBounds="false"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/dbox1" />
 
         <LinearLayout
-            android:id="@+id/contentButtons"
             android:layout_width="match_parent"
+            android:paddingTop="5dp"
             android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
-            android:background="@color/teal_200"
-            android:orientation="horizontal"
-            app:layout_constraintTop_toBottomOf="@id/contentButtons">
+            android:orientation="horizontal">
 
-            <Button
-                android:id="@+id/btnHorarios"
-                android:layout_width="200dp"
-                android:layout_height="64dp"
-                android:layout_margin="5dp"
+            <TextView
+                android:id="@+id/btnFormatoDetalleInformeDBOX"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="5dp"
+                android:background="@drawable/bordes_redondeados"
                 android:layout_weight="1"
-                android:backgroundTint="@color/primaryLightColor"
-                android:scaleType="fitXY"
-                android:text="HORARIOS"
                 android:textAlignment="center"
-                android:textColor="@color/black"
-                android:textColorHint="@color/primaryLightColor"
-                android:textSize="24sp"
-                android:textStyle="bold" />
+                android:textColor="@color/red"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:text="informes" />
 
-            <Button
-                android:id="@+id/btnInforme"
-                android:layout_width="200dp"
-                android:layout_height="60dp"
-                android:layout_margin="5dp"
-                android:layout_weight="1"
-                android:backgroundTint="@color/primaryLightColor"
-                android:scaleType="fitXY"
-                android:text="INFORME"
+            <TextView
+                android:id="@+id/btnFormatoDetalleHorarioDBOX"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bordes_redondeados"
+                android:layout_marginHorizontal="5dp"
                 android:textAlignment="center"
-                android:textColor="@color/black"
-                android:textSize="24sp"
-                android:textStyle="bold" />
+                android:textColor="@color/red"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_weight="1"
+                android:text="Horarios" />
         </LinearLayout>
 
         <androidx.fragment.app.FragmentContainerView
-            android:id="@+id/fragmentContentFormatos"
-            android:name="idat.dami.chinestarapp.Formatos.Formatos"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
-            android:layout_weight="1" />
-
+            android:id="@+id/fragmentContentDBOX"
+            android:name="idat.dami.chinestarapp.Formatos.Fragment_horarioDBOX"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
     </LinearLayout>
 
     <LinearLayout
@@ -97,6 +87,7 @@
             android:layout_width="wrap_content"
             android:layout_height="30dp"
             android:layout_margin="20dp"
+            android:onClick="irACines"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toEndOf="@+id/idInicio"
             app:srcCompat="@drawable/ic_baseline_location_on_24" />
@@ -116,7 +107,7 @@
             android:layout_width="wrap_content"
             android:layout_height="30dp"
             android:layout_margin="20dp"
-            android:onClick="irFormatos"
+            android:onClick="irAFormatos"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toEndOf="@+id/idConfiteria"
             app:srcCompat="@drawable/ic_uno" />

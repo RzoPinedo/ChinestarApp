@@ -2,6 +2,7 @@ package idat.dami.chinestarapp.ViewCine;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
+
 import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -31,10 +32,11 @@ public class CustomAdapter extends RecyclerView.Adapter<CustomAdapter.ViewHolder
             telefono = (TextView) itemView.findViewById(R.id.tvTelefono);
         }
     }
+
     private List<Cine> listaCines;
 
     public CustomAdapter(List<Cine> listaCines) {
-        this.listaCines=listaCines;
+        this.listaCines = listaCines;
     }
 
     @NonNull
@@ -55,22 +57,12 @@ public class CustomAdapter extends RecyclerView.Adapter<CustomAdapter.ViewHolder
         holder.direccion.setText(listaCines.get(position).getDireccion());
         holder.telefono.setText(listaCines.get(position).getTelefono());
 
-        holder.itemView.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(v.getContext(), DetailActivityCine.class);
-                intent.putExtra("Cine", nombreCine);
-            }
-        });
-
     }
 
     @Override
     public int getItemCount() {
         return listaCines.size();
     }
-
-
 
 
 }

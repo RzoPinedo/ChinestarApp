@@ -15,6 +15,7 @@ import idat.dami.chinestarapp.DinoActivity;
 import idat.dami.chinestarapp.ElvisActivity;
 import idat.dami.chinestarapp.Formatos.FormatosActivity;
 import idat.dami.chinestarapp.JurasicWorl;
+import idat.dami.chinestarapp.LoginActivity;
 import idat.dami.chinestarapp.MinionsActivity;
 import idat.dami.chinestarapp.NickjrActivity;
 import idat.dami.chinestarapp.R;
@@ -34,6 +35,13 @@ public class CarteleraActivity extends AppCompatActivity {
     }
 
     //Intent para Activities
+
+    //método para enlazar al login
+    public void irALogin(View view) {
+        Intent objInicio = new Intent(this, LoginActivity.class);
+        startActivity(objInicio);
+    }
+
 
     //método para enlazar a otros activity
     public void irACines(View view) {

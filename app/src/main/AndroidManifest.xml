@@ -16,6 +16,9 @@
         android:windowSoftInputMode="adjustResize"
         tools:targetApi="31">
         <activity
+            android:name=".Formatos.DetalleFormatoDBoxActivity"
+            android:exported="false" />
+        <activity
             android:name=".MinionsActivity"
             android:exported="false" />
         <activity
@@ -58,13 +61,10 @@
             android:name=".ViewComentarios.ComentariosActivity"
             android:exported="false" />
         <activity
-            android:name=".Formatos.DetalleFormatoActivity"
+            android:name=".Formatos.DetalleFormatoXDActivity"
             android:exported="false" />
         <activity
             android:name=".ViewConfiteria.DetailActivityConfiteria"
-            android:exported="false" />
-        <activity
-            android:name=".ViewCine.DetailActivityCine"
             android:exported="false" />
         <activity
             android:name=".RegistroActivity"
