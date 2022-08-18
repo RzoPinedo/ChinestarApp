@@ -22,7 +22,6 @@
                 android:layout_width="match_parent"
                 android:layout_height="250dp"
                 android:layout_weight="2"
-                android:onClick="startAvatar2"
                 app:srcCompat="@drawable/p_bancofalabella" />
 
 
@@ -31,7 +30,6 @@
                 android:layout_width="match_parent"
                 android:layout_height="250dp"
                 android:layout_weight="2"
-                android:onClick="startAvatar2"
                 app:srcCompat="@drawable/p_banbif" />
 
             <ImageView
@@ -39,7 +37,6 @@
                 android:layout_width="match_parent"
                 android:layout_height="250dp"
                 android:layout_weight="2"
-                android:onClick="startAvatar2"
                 app:srcCompat="@drawable/p_bancoripley" />
 
             <ImageView
@@ -47,7 +44,6 @@
                 android:layout_width="match_parent"
                 android:layout_height="250dp"
                 android:layout_weight="2"
-                android:onClick="startAvatar2"
                 app:srcCompat="@drawable/p_bcp" />
 
         </LinearLayout>
