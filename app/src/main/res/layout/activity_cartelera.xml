@@ -8,28 +8,33 @@
     tools:context=".Inicio.CarteleraActivity">
 
     <LinearLayout
-        android:layout_width="match_parent"
+        android:id="@+id/user"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:orientation="horizontal">
+        android:elevation="8dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
         <ImageView
-            android:id="@+id/header"
-            android:layout_width="wrap_content"
-            android:layout_height="50dp"
+            android:id="@+id/header1"
+            android:layout_width="370dp"
+            android:layout_height="65dp"
             android:adjustViewBounds="true"
-            android:scaleType="centerCrop"
             android:background="@color/red"
+            android:scaleType="centerCrop"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            android:src="@drawable/header_sin_usuario"/>
+            app:srcCompat="@drawable/header_sin_usuario" />
 
         <ImageView
-            android:id="@+id/imgIconoUsuario"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:background="@color/red"
-            tools:srcCompat="@drawable/ic_usuario_outline" />
+            android:layout_width="41dp"
+            android:layout_height="65dp"
+            android:background="@color/user"
+            android:onClick="irALogin"
+            android:src="@drawable/ic_user_outline" />
 
     </LinearLayout>
 
