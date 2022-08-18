@@ -2,9 +2,11 @@ package idat.dami.chinestarapp;
 
 
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
 import com.google.android.material.textfield.TextInputLayout;
@@ -17,6 +19,10 @@ public class LoginActivity extends AppCompatActivity {
     TextInputLayout usuario;
     TextInputLayout password;
     Button btnIngresar;
+    ImageView btnInstagram;
+    String urlInstagram;
+    String urlWhatsApp;
+    String urlYoutube;
 
 
     @Override
@@ -28,6 +34,18 @@ public class LoginActivity extends AppCompatActivity {
         usuario = findViewById(R.id.edUsuario);
         password = findViewById(R.id.edPassword);
         btnIngresar = findViewById(R.id.btnIngresar);
+        btnInstagram = findViewById(R.id.btnInstagram);
+
+        urlInstagram = "https://www.instagram.com/cinemarkperu/?hl=en";
+
+        btnInstagram.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Uri uri = Uri.parse(urlInstagram);
+                Intent intent = new Intent(Intent.ACTION_VIEW, uri);
+                startActivity(intent);
+            }
+        });
     }
 
     //método para enlazar a otros activity
