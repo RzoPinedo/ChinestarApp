@@ -40,6 +40,7 @@ public class LoginActivity extends AppCompatActivity {
         btnIngresar = findViewById(R.id.btnIngresar);
         btnInstagram = findViewById(R.id.btnInstagram);
         btnTwitter = findViewById(R.id.btnTwitter);
+        btnFacebook = findViewById(R.id.btnFacebook);
 
         urlInstagram = "https://www.instagram.com/cinemarkperu/?hl=en";
         urlTwitter = "https://twitter.com/cinemark_peru?lang=en";
