@@ -57,17 +57,6 @@ public class CustomAdapter extends RecyclerView.Adapter<CustomAdapter.ViewHolder
         holder.direccion.setText(listaCines.get(position).getDireccion());
         holder.telefono.setText(listaCines.get(position).getTelefono());
 
-        /*
-        holder.itemView.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(v.getContext(), DetailActivityCine.class);
-                intent.putExtra("Cine", nombreCine);
-            }
-        });
-
-         */
-
     }
 
     @Override
