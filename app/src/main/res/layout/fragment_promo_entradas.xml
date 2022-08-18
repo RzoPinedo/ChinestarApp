@@ -22,7 +22,6 @@
                 android:layout_width="match_parent"
                 android:layout_height="250dp"
                 android:layout_weight="2"
-                android:onClick="startAvatar2"
                 app:srcCompat="@drawable/p_boxcinefilo" />
 
 
@@ -31,7 +30,6 @@
                 android:layout_width="match_parent"
                 android:layout_height="250dp"
                 android:layout_weight="2"
-                android:onClick="startAvatar2"
                 app:srcCompat="@drawable/p_funciondedescuento" />
 
             <ImageView
@@ -39,7 +37,6 @@
                 android:layout_width="match_parent"
                 android:layout_height="250dp"
                 android:layout_weight="2"
-                android:onClick="startAvatar2"
                 app:srcCompat="@drawable/p_gamingbox" />
 
             <ImageView
@@ -47,7 +44,6 @@
                 android:layout_width="match_parent"
                 android:layout_height="250dp"
                 android:layout_weight="2"
-                android:onClick="startAvatar2"
                 app:srcCompat="@drawable/p_lunesdedbox" />
 
             <ImageView
@@ -55,7 +51,6 @@
                 android:layout_width="match_parent"
                 android:layout_height="250dp"
                 android:layout_weight="2"
-                android:onClick="startAvatar2"
                 app:srcCompat="@drawable/p_miercoles" />
 
             <ImageView
@@ -63,7 +58,6 @@
                 android:layout_width="match_parent"
                 android:layout_height="250dp"
                 android:layout_weight="2"
-                android:onClick="startAvatar2"
                 app:srcCompat="@drawable/p_online" />
 
             <ImageView
@@ -71,7 +65,6 @@
                 android:layout_width="match_parent"
                 android:layout_height="250dp"
                 android:layout_weight="2"
-                android:onClick="startAvatar2"
                 app:srcCompat="@drawable/p_universitario" />
 
 
