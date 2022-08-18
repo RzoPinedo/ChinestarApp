@@ -1,11 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:layout_margin="0dp"
     android:orientation="vertical"
-    android:padding="0dp">
+    android:padding="0dp"
+    tools:context=".ViewConfiteria.ConfiteriaActivity">
 
     <ImageView
         android:id="@+id/header"
@@ -18,19 +20,36 @@
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/header_sin_usuario" />
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:orientation="vertical"
-        app:layout_constraintBottom_toTopOf="@+id/linearLayout">
 
-        <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/recyclerVConfiteria"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_marginTop="135dp" />
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bnvMenu"
+        android:layout_width="408dp"
+        android:layout_height="56dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:elevation="8dp"
+        app:labelVisibilityMode="selected"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/header"
+        app:layout_constraintVertical_bias="0.0"
+        app:menu="@menu/barranavconfiteria" />
 
-    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/fragmentConfiteria"
+        android:layout_width="413dp"
+        android:layout_height="570dp"
+        android:layout_alignParentTop="true"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.765" />
 
     <LinearLayout
         android:id="@+id/linearLayout"

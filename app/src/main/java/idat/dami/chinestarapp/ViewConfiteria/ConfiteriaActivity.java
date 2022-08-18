@@ -1,12 +1,18 @@
 package idat.dami.chinestarapp.ViewConfiteria;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentTransaction;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.MenuItem;
 import android.view.View;
+
+import com.google.android.material.bottomnavigation.BottomNavigationView;
+
 import java.util.ArrayList;
 import java.util.List;
 import idat.dami.chinestarapp.Formatos.FormatosActivity;
@@ -18,6 +24,10 @@ import idat.dami.chinestarapp.model.Confiteria;
 
 public class ConfiteriaActivity extends AppCompatActivity {
 
+    FragmentBebidas bebidasFragment = new FragmentBebidas();
+    FragmentDulces dulcesFragment = new FragmentDulces();
+    FragmentCanchitas canchitasFragment = new FragmentCanchitas();
+
     private RecyclerView recyclerViewConfiteria;
     private CustomAdapter2 adaptadorConfiteria;
 
@@ -25,30 +35,36 @@ public class ConfiteriaActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_confiteria);
-        getSupportActionBar().hide();
-
-        recyclerViewConfiteria = findViewById(R.id.recyclerVConfiteria);
-        recyclerViewConfiteria.setLayoutManager(new LinearLayoutManager(this));
-
-        adaptadorConfiteria = new CustomAdapter2(obtenerListaConfiteria());
-        recyclerViewConfiteria.setAdapter(adaptadorConfiteria);
+        BottomNavigationView navigation = findViewById(R.id.bnvMenu);
+        navigation.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener);
 
     }
 
-    public List<Confiteria> obtenerListaConfiteria() {
-        ArrayList<Confiteria> itemConfiteria = new ArrayList<>();
-        itemConfiteria.add(new Confiteria("Pack Emparejados Love", "Canchita Grande + 2 gaseosas 16oz", "32.90", R.drawable.x_1));
-        itemConfiteria.add(new Confiteria("Pack Grande 1", "Canchita grande + 2 gaseosas 12oz", "30.90", R.drawable.x_2));
-        itemConfiteria.add(new Confiteria("Pack Grande 2", "Descripcion combo --------", "29.90", R.drawable.x_3));
-        itemConfiteria.add(new Confiteria("Pack Grande 3", "Descripcion combo --------", "31.90", R.drawable.x_4));
-        itemConfiteria.add(new Confiteria("Pack Grande 4", "Descripcion combo --------", "29.90", R.drawable.x_5));
-        itemConfiteria.add(new Confiteria("Pack Grande 5", "Descripcion combo --------", "29.90", R.drawable.x_6));
-        itemConfiteria.add(new Confiteria("Pack Grande 6", "Descripcion combo --------", "45.90", R.drawable.x_7));
-        itemConfiteria.add(new Confiteria("Pack Grande 7", "Descripcion combo --------", "43.90", R.drawable.x_8));
-        itemConfiteria.add(new Confiteria("Pack Grande 8", "Descripcion combo --------", "35.90", R.drawable.x_9));
-        itemConfiteria.add(new Confiteria("Pack Grande 9", "Descripcion combo --------", "30.90", R.drawable.x_10));
+    private final BottomNavigationView.OnNavigationItemSelectedListener mOnNavigationItemSelectedListener = new BottomNavigationView.OnNavigationItemSelectedListener() {
+        @Override
+        public boolean onNavigationItemSelected(@NonNull MenuItem item) {
+            int idMenu = item.getItemId();
+            switch (idMenu){
+                case R.id.bebidasId:
+                    loadFragment(bebidasFragment);
+                    return true;
 
-        return itemConfiteria;
+                case R.id.canchitaId:
+                    loadFragment(canchitasFragment);
+                    return true;
+
+                case R.id.dulcesId:
+                    loadFragment(dulcesFragment);
+                    return true;
+
+            }
+            return false;
+        }
+    };
+    public void loadFragment(Fragment fragment){
+        FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
+        transaction.replace(R.id.fragmentConfiteria,fragment);
+        transaction.commit();
     }
 
     //método para enlazar a otros activity
