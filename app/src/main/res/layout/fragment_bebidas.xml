@@ -4,11 +4,15 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/white"
-    tools:context=".ViewCine.FragmentZonaLima"
+    tools:context=".ViewConfiteria.FragmentBebidas"
     tools:ignore="MissingPrefix">
 
+
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/recyclerVLima"
+        android:id="@+id/ConfiteriaRecycler"
         android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+        android:layout_height="match_parent"/>
+
+
+
 </FrameLayout>

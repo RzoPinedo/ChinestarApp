@@ -6,6 +6,13 @@
     android:background="@color/white"
     tools:context=".Formatos.Fragment_horarioDBOX">
 
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/imagenblanco"
+        android:scaleType="fitXY"/>
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -198,6 +205,17 @@
                                 android:textColor="@color/black"
                                 android:textSize="20sp"
                                 android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/tv1830_3"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:paddingTop="20dp"
+                                android:text="18:30"
+                                android:textAlignment="center"
+                                android:textColor="@color/black"
+                                android:textSize="20sp"
+                                android:textStyle="bold" />
                         </LinearLayout>
                     </LinearLayout>
                 </LinearLayout>
@@ -252,11 +270,11 @@
                                 android:textStyle="bold" />
 
                             <TextView
-                                android:id="@+id/tv1830_3"
+                                android:id="@+id/textView2"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:paddingTop="20dp"
-                                android:text="18:30"
+                                android:paddingTop="10dp"
+                                android:text="18:20"
                                 android:textAlignment="center"
                                 android:textColor="@color/black"
                                 android:textSize="20sp"
@@ -272,6 +290,8 @@
                                 android:textColor="@color/black"
                                 android:textSize="20sp"
                                 android:textStyle="bold" />
+
+
 
                             <TextView
                                 android:id="@+id/tvDoblada3"
