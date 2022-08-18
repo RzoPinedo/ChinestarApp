@@ -18,6 +18,7 @@ public class FormatosActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_formatos);
+        //ocultar el ActionBar
         getSupportActionBar().hide();
     }
 
