@@ -3,12 +3,17 @@ package idat.dami.chinestarapp.ViewConfiteria;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import java.util.ArrayList;
+
 import idat.dami.chinestarapp.R;
+import idat.dami.chinestarapp.model.Confiteria;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -16,34 +21,17 @@ import idat.dami.chinestarapp.R;
  * create an instance of this fragment.
  */
 public class FragmentCanchitas extends Fragment {
+    RecyclerView recyclerVConfiteria;
+    ArrayList<Confiteria> listaConfiteria;
 
-    // TODO: Rename parameter arguments, choose names that match
-    // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
-    private static final String ARG_PARAM1 = "param1";
-    private static final String ARG_PARAM2 = "param2";
-
-    // TODO: Rename and change types of parameters
-    private String mParam1;
-    private String mParam2;
 
     public FragmentCanchitas() {
         // Required empty public constructor
     }
 
-    /**
-     * Use this factory method to create a new instance of
-     * this fragment using the provided parameters.
-     *
-     * @param param1 Parameter 1.
-     * @param param2 Parameter 2.
-     * @return A new instance of fragment BlankFragmentConchitas.
-     */
-    // TODO: Rename and change types and number of parameters
     public static FragmentCanchitas newInstance(String param1, String param2) {
         FragmentCanchitas fragment = new FragmentCanchitas();
         Bundle args = new Bundle();
-        args.putString(ARG_PARAM1, param1);
-        args.putString(ARG_PARAM2, param2);
         fragment.setArguments(args);
         return fragment;
     }
@@ -51,16 +39,37 @@ public class FragmentCanchitas extends Fragment {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        if (getArguments() != null) {
-            mParam1 = getArguments().getString(ARG_PARAM1);
-            mParam2 = getArguments().getString(ARG_PARAM2);
-        }
+
     }
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
+        View vista = inflater.inflate(R.layout.fragment_bebidas, container, false);
+
+        listaConfiteria = new ArrayList<>();
+        recyclerVConfiteria = vista.findViewById(R.id.ConfiteriaRecycler);
+        recyclerVConfiteria.setLayoutManager(new LinearLayoutManager(getContext()));
+
+        llenarConfiteria();
+
+        CustomAdapter2 adapter = new CustomAdapter2(listaConfiteria);
+        recyclerVConfiteria.setAdapter(adapter);
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_blank_canchitas, container, false);
+        return vista;
+    }
+
+    public void llenarConfiteria() {
+        listaConfiteria.add(new Confiteria("Pack Emparejados Love", "Canchita Grande ", "32.90", R.drawable.canchita1));
+        listaConfiteria.add(new Confiteria("Pack Grande 1", "Canchita grande ", "30.90", R.drawable.canchita2));
+        listaConfiteria.add(new Confiteria("Pack Grande 2", "Descripcion combo --------", "29.90", R.drawable.canchita3));
+        listaConfiteria.add(new Confiteria("Pack Grande 3", "Descripcion combo --------", "31.90", R.drawable.canchita4));
+        listaConfiteria.add(new Confiteria("Pack Grande 4", "Descripcion combo --------", "29.90", R.drawable.canchita5));
+        listaConfiteria.add(new Confiteria("Pack Grande 5", "Descripcion combo --------", "29.90", R.drawable.canchita6));
+        listaConfiteria.add(new Confiteria("Pack Grande 6", "Descripcion combo --------", "45.90", R.drawable.canchita7));
+        listaConfiteria.add(new Confiteria("Pack Grande 7", "Descripcion combo --------", "43.90", R.drawable.canchita8));
+        listaConfiteria.add(new Confiteria("Pack Grande 8", "Descripcion combo --------", "35.90", R.drawable.canchita9));
+        listaConfiteria.add(new Confiteria("Pack Grande 9", "Descripcion combo --------", "30.90", R.drawable.canchita10));
+
     }
 }
