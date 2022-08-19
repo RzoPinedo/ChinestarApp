@@ -67,16 +67,16 @@ public class FragmentBebidas extends Fragment {
     }
 
     public void llenarConfiteria() {
-        listaConfiteria.add(new Confiteria("Pack Emparejados Love", "Canchita Grande + 2 gaseosas 16oz", "32.90", R.drawable.x_1));
-        listaConfiteria.add(new Confiteria("Pack Grande 1", "Canchita grande + 2 gaseosas 12oz", "30.90", R.drawable.x_2));
-        listaConfiteria.add(new Confiteria("Pack Grande 2", "Descripcion combo --------", "29.90", R.drawable.x_3));
-        listaConfiteria.add(new Confiteria("Pack Grande 3", "Descripcion combo --------", "31.90", R.drawable.x_4));
-        listaConfiteria.add(new Confiteria("Pack Grande 4", "Descripcion combo --------", "29.90", R.drawable.x_5));
-        listaConfiteria.add(new Confiteria("Pack Grande 5", "Descripcion combo --------", "29.90", R.drawable.x_6));
-        listaConfiteria.add(new Confiteria("Pack Grande 6", "Descripcion combo --------", "45.90", R.drawable.x_7));
-        listaConfiteria.add(new Confiteria("Pack Grande 7", "Descripcion combo --------", "43.90", R.drawable.x_8));
-        listaConfiteria.add(new Confiteria("Pack Grande 8", "Descripcion combo --------", "35.90", R.drawable.x_9));
-        listaConfiteria.add(new Confiteria("Pack Grande 9", "Descripcion combo --------", "30.90", R.drawable.x_10));
+        listaConfiteria.add(new Confiteria("Pack Emparejados Love", "Gaseosa Pepsi 355ML", "3.90", R.drawable.bebidas1));
+        listaConfiteria.add(new Confiteria("Pack Grande 1", "Trio de Gaseosa KR", "10.90", R.drawable.bebidas2));
+        listaConfiteria.add(new Confiteria("Pack Grande 2", "Descripcion combo --------", "3.90", R.drawable.bebida3));
+        listaConfiteria.add(new Confiteria("Pack Grande 3", "Descripcion combo --------", "3.90", R.drawable.bebidas4));
+        listaConfiteria.add(new Confiteria("Pack Grande 4", "Descripcion combo --------", "2.90", R.drawable.bebidas5));
+        listaConfiteria.add(new Confiteria("Pack Grande 5", "Descripcion combo --------", "2.90", R.drawable.bebidas6));
+        listaConfiteria.add(new Confiteria("Pack Grande 6", "Descripcion combo --------", "4.90", R.drawable.bebidas7));
+        listaConfiteria.add(new Confiteria("Pack Grande 7", "Descripcion combo --------", "4.90", R.drawable.bebidas8));
+        listaConfiteria.add(new Confiteria("Pack Grande 8", "Descripcion combo --------", "3.90", R.drawable.bebidas9));
+        listaConfiteria.add(new Confiteria("Pack Grande 9", "Descripcion combo --------", "3.90", R.drawable.bebidas10));
 
     }
 }

@@ -40,6 +40,7 @@ public class ConfiteriaActivity extends AppCompatActivity {
         BottomNavigationView navigation = findViewById(R.id.bnvMenu);
         navigation.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener);
 
+        loadFragment(dulcesFragment);
     }
 
     private final BottomNavigationView.OnNavigationItemSelectedListener mOnNavigationItemSelectedListener = new BottomNavigationView.OnNavigationItemSelectedListener() {
