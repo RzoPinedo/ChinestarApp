@@ -3,6 +3,7 @@ package idat.dami.chinestarapp.model;
 import java.util.Date;
 
 public class Comentario {
+    private int id;
     private String usuario;
     private String comentario;
     private String fecha;
@@ -10,10 +11,19 @@ public class Comentario {
     public Comentario() {
     }
 
-    public Comentario(String usuario, String comentario, String fecha) {
+    public Comentario(int id, String usuario, String comentario, String fecha) {
+        this.id = id;
         this.usuario = usuario;
         this.comentario = comentario;
         this.fecha = fecha;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
     }
 
     public String getUsuario() {

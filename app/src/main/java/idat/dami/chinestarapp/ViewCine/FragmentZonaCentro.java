@@ -63,7 +63,7 @@ public class FragmentZonaCentro extends Fragment {
         listaCines.add(new Cine("Cine Mall Huancayo", "Av. Guardia Civil 1123 CC. Real Plaza", "(01) 897 6633", R.drawable.c_3));
         listaCines.add(new Cine("Cine Open Maravilla", "Jiron la Unión 3233-3308", "(01) 123 7884", R.drawable.cc_4));
         listaCines.add(new Cine("Cine Mall Pucallpa ", "Av Aviación 2293", "(01) 433 9874", R.drawable.c_5));
-        listaCines.add(new Cine("Cine Mall ", "Av. Guardia Civil 1123 CC. Real Plaza", "(01) 897 6633", R.drawable.c_6));
+        listaCines.add(new Cine("Cine Mall TingoMaria", "Av. Guardia Civil 1123 CC. Real Plaza", "(01) 897 6633", R.drawable.c_6));
         listaCines.add(new Cine("Cine Plaza Casma", "Jiron la Unión 3233-3308", "(01) 123 7884", R.drawable.c_7));
         listaCines.add(new Cine("Cine Mall Huaral", "Av Aviación 2293", "(01) 433 9874", R.drawable.c_8));
         listaCines.add(new Cine("Cine Mall Piura", "Av. Guardia Civil 1123 CC. Real Plaza", "(01) 897 6633", R.drawable.c_9));

@@ -58,7 +58,11 @@ public class FragmentZonaSur extends Fragment {
         listaCines.add(new Cine("Cine Plaza Blanca", "Av. Angamos 232 int 24, Kun Aguero", "(01) 763 8972", R.drawable.c_1));
         listaCines.add(new Cine("Cine Mall MistiPlaza", "Av Aviación 2293", "(01) 433 9874", R.drawable.c_2));
         listaCines.add(new Cine("Cine San Vicente Star", "Av. Guardia Civil 1123 CC. Real Plaza", "(01) 897 6633", R.drawable.c_3));
+        listaCines.add(new Cine("Cine Cusco Star", "Jiron la Unión 3233-3308", "(01) 123 7884", R.drawable.cc_4));
+        listaCines.add(new Cine("Cine San Vicente Star", "Av. Guardia Civil 1123 CC. Real Plaza", "(01) 897 6633", R.drawable.c_3));
         listaCines.add(new Cine("Cine Arequipa Star", "Jiron la Unión 3233-3308", "(01) 123 7884", R.drawable.cc_4));
+        listaCines.add(new Cine("Cine Ica Star", "Av. Guardia Civil 1123 CC. Real Plaza", "(01) 897 6633", R.drawable.c_3));
+        listaCines.add(new Cine("Cine Cañete Star", "Jiron la Unión 3233-3308", "(01) 123 7884", R.drawable.cc_4));
 
     }
 

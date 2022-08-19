@@ -17,9 +17,7 @@ import idat.dami.chinestarapp.ViewComentarios.ComentariosActivity;
 import idat.dami.chinestarapp.R;
 import idat.dami.chinestarapp.ViewConfiteria.ConfiteriaActivity;
 
-public class CinesActivity extends AppCompatActivity{
-
-
+public class CinesActivity extends AppCompatActivity {
     private TextView zonaLima;
     private TextView zonaSur;
     private TextView zonaCentro;
@@ -31,12 +29,10 @@ public class CinesActivity extends AppCompatActivity{
         setContentView(R.layout.activity_cines);
         getSupportActionBar().hide();
 
-
         zonaLima = (TextView) findViewById(R.id.btnZonaLima);
         zonaSur = (TextView) findViewById(R.id.btnZonaSur);
         zonaNorte = (TextView) findViewById(R.id.btnZonaNorte);
         zonaCentro = (TextView) findViewById(R.id.btnZonaCentro);
-
 
         zonaLima.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -47,8 +43,8 @@ public class CinesActivity extends AppCompatActivity{
 
                 fragmentTransaction.add(R.id.fragmentCines, fragmentZonaLima);
                 //fragmentManager.popBackStackImmediate(null, FragmentManager.POP_BACK_STACK_INCLUSIVE);
-                fragmentTransaction.addToBackStack(null);
-                fragmentTransaction.commit();
+                fragmentTransaction.addToBackStack(null).commit();
+                //fragmentTransaction.commit();
             }
 
         });
@@ -62,8 +58,8 @@ public class CinesActivity extends AppCompatActivity{
 
                 fragmentTransaction.add(R.id.fragmentCines, fragmentZonaSur);
                 //fragmentManager.popBackStackImmediate(null, FragmentManager.POP_BACK_STACK_INCLUSIVE);
-                fragmentTransaction.addToBackStack(null);
-                fragmentTransaction.commit();
+                fragmentTransaction.addToBackStack(null).commit();
+                //fragmentTransaction.commit();
             }
         });
 
@@ -77,8 +73,8 @@ public class CinesActivity extends AppCompatActivity{
 
                 fragmentTransaction.add(R.id.fragmentCines, fragmentZonaNorte);
                 //fragmentManager.popBackStackImmediate(null, FragmentManager.POP_BACK_STACK_INCLUSIVE);
-                fragmentTransaction.addToBackStack(null);
-                fragmentTransaction.commit();
+                fragmentTransaction.addToBackStack(null).commit();
+                //fragmentTransaction.commit();
             }
         });
 
@@ -91,11 +87,10 @@ public class CinesActivity extends AppCompatActivity{
 
                 fragmentTransaction.add(R.id.fragmentCines, fragmentZonaCentro);
                 //fragmentManager.popBackStackImmediate(null, FragmentManager.POP_BACK_STACK_INCLUSIVE);
-                fragmentTransaction.addToBackStack(null);
-                fragmentTransaction.commit();
+                fragmentTransaction.addToBackStack(null).commit();
+                //fragmentTransaction.commit();
             }
         });
-
 
 
     }
